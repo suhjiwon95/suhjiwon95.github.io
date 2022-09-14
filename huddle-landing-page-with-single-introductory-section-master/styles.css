@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+:root {
+    /* color */
+    --violet-color: hsl(257, 40%, 49%);
+    --soft-magenta-color: hsl(300, 69%, 71%);
+    /* font */
+    --heading-font-family: 'Poppins', sans-serif;
+    --body-font-family: 'Open Sans', sans-serif;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 62.5%;
+    background-image: url(/images/bg-mobile.svg);
+    background-color: var(--violet-color);
+    min-width: 1440px;
+}
+
+ul li {
+    list-style: none;
+}
+
+header {
+    padding: 2rem 4rem;
+}
+
+.logo img {
+    width: 14%;
+}
+
+section {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    margin-top: 2rem;
+    padding: 0 4rem;
+}
+
+
+.title,
+.description p {
+    color: white;
+}
+
+.title {
+    font-size: 2.4rem;
+    font-family: var(--heading-font-family);
+    font-weight: 700;
+}
+
+.description p,
+button {
+    font-family: var(--body-font-family);
+    font-size: 1.2rem;
+    font-weight: lighter;
+}
+
+.text-and-btn-wrapper {
+    margin-left: 2rem;
+    padding: 2rem;
+}
+
+button {
+    background-color: white;
+    border-radius: 50px;
+    padding: .9rem 2rem;
+    font-size: 1.2rem;
+    color: var(--violet-color);
+    width: 40%;
+    box-shadow: 10px 5px;
+}
+
+button:hover {
+    background-color: var(--soft-magenta-color);
+    color: white;
+    cursor: pointer;
+    box-shadow: 10px 5px;
+}
+
+.bottom .icons {
+    display: flex;
+    justify-content:flex-end;
+    margin-bottom: 1.6rem;
+    flex:1;
+}
+
+.bottom .icons ul {
+    display: flex;
+    justify-content: space-around;
+}
+
+.bottom .icons li {
+    margin-right: 1.4rem;
+}
+
+.bottom .icons i {
+    color: white;
+    font-size: 2rem;
+}
+
+.bottom .icons i:hover {
+    color: var(--soft-magenta-color);
+}
+
