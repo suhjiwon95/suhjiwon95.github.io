@@ -119,7 +119,11 @@ header {
     main {
         padding: 12px 24px;
     }
-
+    
+    body {
+        background-image: url("./images/bg-desktop.svg");
+    }
+    
     header {
         margin-bottom: 80px;
     }
