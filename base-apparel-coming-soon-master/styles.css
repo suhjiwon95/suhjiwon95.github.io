@@ -1,0 +1,201 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;600&display=swap');
+:root {
+    /*  Primary colors */
+    --desaturated-red: hsl(0, 36%, 70%);
+    --soft-red: hsl(0, 93%, 68%);
+    --shadow-red: hsl(0, 49%, 88%);
+
+    /*  Neutral colors */
+    --dark-grayish-red: hsl(0, 6%, 24%);
+
+    /* Gradients */
+    --Linear-gradient-1: linear-gradient(135deg, hsl(0, 0%, 100%), hsl(0, 100%, 98%));
+    --Linear-gradient-2: linear-gradient(135deg, hsl(0, 80%, 86%), hsl(0, 74%, 74%));
+}
+
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    background: url(./images/bg-pattern-desktop.svg) no-repeat center center fixed;
+    background-size: cover;
+}
+
+body {
+    font-family: 'Josefin Sans', sans-serif;
+    width: 100vw;
+}
+
+.container {
+    display: flex;
+    
+}
+
+.logo {
+    margin: 4em;
+    margin-bottom: 2em;
+    padding: 0 4em;
+
+}
+
+.hero-container {
+    display: flex;
+    flex-direction: column;
+    margin: 4em auto;
+    
+}
+
+.hero-info {
+    text-align: left;
+    color: var(--desaturated-red);
+    margin: 0 4em;
+    display: flex;
+    flex-direction: column;
+    min-width: 24em;
+    padding:  0 4em;
+    padding-right: 10em;
+    /* border: 1px solid blue; */
+}
+
+h1 {
+    font-weight: 300;
+    font-size: 4rem;
+    text-transform: uppercase;
+    letter-spacing: 1.1rem;
+}
+
+.coming-soon {
+    color:var(--dark-grayish-red);
+    font-weight: 500;
+}
+
+.greeting {
+    line-height: 1.8rem;
+    margin-top: 1.6em;
+}
+
+.hero-mobile-img {
+    display: none;
+}
+
+.email-wrapper {
+    display: flex;
+    align-items: center;
+    border-radius: 2em;
+    margin: 2em 0 1em 0;
+    max-width: 500px;
+    height: 3em;
+}
+
+input[type="email"] {
+    outline: none;
+    background-color: transparent;
+    border: .8px solid  var(--desaturated-red);
+    width: 90%;
+    border-radius: 2em;
+    padding: 1.6em;
+}
+
+
+input::placeholder {
+    color: var(--desaturated-red);
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 1.1rem;
+    /* padding-left: .4em; */
+}
+
+.submit {
+    background: var(--Linear-gradient-2);
+    box-shadow: var(--shadow-red) 0px 20px 30px 3px,var(--soft-red) 0px 10px 10px -5px;
+    padding: 1.4em 2.8em;
+    border-radius: 4em;
+    border: none;
+    margin: 0;
+    margin-left: -4em;
+    text-align: center;
+    
+}
+
+.submit:hover {
+    cursor: pointer;
+    background: linear-gradient(135deg, hsl(0, 80%, 86%), hsl(0, 80%, 70%)) ;
+    
+}
+
+/* error message */
+.error{
+    color: var(--soft-red);
+    margin-left: 1.2em;
+    position: relative;
+    
+}
+
+@media (max-width: 500px) {
+  
+    .container {
+        display: flex;
+        flex-direction: column-reverse;
+
+    }
+
+    .hero-container {
+        display: flex;
+        flex-direction: column;
+        margin: 0 auto;
+    }
+
+    .logo {
+        position: absolute;
+        top: 0;
+        left: 0;
+        padding: 0;
+        margin: 2em;
+        margin-bottom: 2em;
+    }
+
+    .logo img {
+        width: 70%;
+    }
+
+    .hero-info {
+        text-align: center;
+        margin: 2em auto;
+        padding: 3.8em;
+    }
+
+    h1 {
+        font-size: 3rem;
+        font-weight: 100;
+    }
+
+    .hero-img {
+       margin-top: 5.6em;
+    }
+
+    .hero-mobile-img {
+        width: 100%;
+        object-fit: cover;
+        display: block;
+    }
+
+    .hero-desktop-img {
+        display: none;
+    }
+
+    input {
+        font-size: .8rem;
+    }
+
+    .error {
+        margin-left: 1.2em;
+        display: block;
+        text-align: left;
+    }
+
+   
+}
