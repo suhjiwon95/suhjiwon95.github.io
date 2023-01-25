@@ -34,11 +34,13 @@
       <picture>
         <source media="(min-width:700px)"
                 srcset="./images/image-header-desktop.jpg">
-        <source media="(min-width:370px)" 
-                srcset="./images/image-header-mobile.jpg">
-        <img src="./images/image-header-desktop.jpg"  alt="">
+        <!-- No need to set media for mobile img since when the browser doesn't use the 
+        <source> for the desktop img, then it moves to the <img>. -->
+        <!-- <source media="(min-width:370px)" 
+                srcset="./images/image-header-mobile.jpg"> -->
+        <img src="./images/image-header-mobile.jpg"  alt="">
           
-          <!-- pixel specific  -->
+          <!-- pixel specific syntex  -->
           <!-- <img src="./images/image-header-desktop.jpg"
           srcset="./images/image-header-mobile.jpg 370w,
                   ./images/image-header-desktop.jpg 700w"
