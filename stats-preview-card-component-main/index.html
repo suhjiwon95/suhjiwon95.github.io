@@ -31,8 +31,23 @@
         </div>
     </div>
     <div class="hero-img">
-      <img src="./images/image-header-desktop.jpg" alt="desktop" class="desktop">
-      <img src="./images/image-header-mobile.jpg" alt="" class="mobile">
+      <picture>
+        <source media="(min-width:700px)"
+                srcset="./images/image-header-desktop.jpg">
+        <source media="(min-width:370px)" 
+                srcset="./images/image-header-mobile.jpg">
+        <img src="./images/image-header-desktop.jpg"  alt="">
+          
+          <!-- pixel specific  -->
+          <!-- <img src="./images/image-header-desktop.jpg"
+          srcset="./images/image-header-mobile.jpg 370w,
+                  ./images/image-header-desktop.jpg 700w"
+          sizes="50vw"
+          alt=""> -->
+          
+      </picture>
+      <div class="filter-color"></div>
+      
     </div>
   </div>
  
