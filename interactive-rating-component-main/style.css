@@ -29,7 +29,7 @@ body {
     background-color: var(--Dark-Blue);
     border-radius: 20px;
     max-width: 350px;
-    margin: 20em auto;
+    margin: 16em auto;
     padding: 1.6em;
     display: flex;
     flex-direction: column;
