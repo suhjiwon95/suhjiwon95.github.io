@@ -37,8 +37,6 @@ Users should be able to:
 - Mobile-first workflow
 - JavaScript
 
-**Note: These are just examples. Delete this note and replace the list above with your own choices**
-
 ### What I learned
 
 - I learned how to display different page when a button is clicked.
