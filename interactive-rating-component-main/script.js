@@ -3,20 +3,23 @@
     // else, submit the rating and display the thank you state.
         // the rating should appear on the rating state.
 
-const form = document.getElementById('form');
-
+const rating = document.getElementById('rate');
+const rateBtn = document.querySelectorAll('.rating_btn');
 const submit = document.getElementById('submit');
+const mainCard = document.querySelector('.mainCard');
+const thanksCard = document.querySelector('.box-thankyou');
 
 
-  
-const clicked = (e) => {
-    e.preventDefault();
-    const ratings = document.getElementById('rating-1').value;
-    localStorage.setItem("storedValue", ratings);
+submit.addEventListener("click", () => {
+    thanksCard.classList.remove('hidden');
+    mainCard.style.display = 'none';
+});
 
-    const storedValue = localStorage.getItem(storedValue);
-    console.log(storedValue);
+rateBtn.forEach(rate => {
+    rate.addEventListener('click', (event) => {
+        rating.innerHTML = rate.innerHTML;
+    });
+});
 
-}
 
-form.addEventListener("submit", clicked);
+
