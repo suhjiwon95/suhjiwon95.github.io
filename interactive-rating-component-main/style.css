@@ -1,0 +1,155 @@
+@import url('https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap');
+
+:root {
+    --Orange: hsl(25, 97%, 53%);
+    --White: hsl(0, 0%, 100%);
+    --Light-Grey: hsl(217, 12%, 63%);
+    --Medium-Grey: hsl(216, 12%, 54%);
+    --Dark-Blue: hsl(213, 19%, 18%);
+    --Very-Dark-Blue: hsl(216, 12%, 8%);
+    --font-size-p: 15px;
+    --margin: 2em;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Overpass', sans-serif;
+    
+}
+
+body {
+    width: 100%;
+    background-color: var(--Very-Dark-Blue);
+    color: var(--White);
+}
+
+.box {
+    background-color: var(--Dark-Blue);
+    border-radius: 20px;
+    max-width: 350px;
+    margin: 20em auto;
+    padding: 1.6em;
+    display: flex;
+    flex-direction: column;
+    gap: 1.6em;
+    line-height: 1.5em;
+}
+
+.lower {
+    padding-right: .2em;
+}
+
+p,
+.numbers button {
+    font-size: var(--font-size-p);
+    color: var(--Light-Grey);
+}
+
+p {
+    margin: .8em 0 .8em 0;
+}
+
+h1 {
+    font-size: 22px;
+}
+
+.star-icon-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: hsl(213, 19%, 23%);
+    border-radius: 50%;
+    width: 44px;
+    height: 44px;
+}
+
+
+.numbers {
+    display: flex;
+    justify-content: space-around;
+}
+
+.numbers button {
+    border-radius: 50%;
+    width: 44px;
+    height: 44px;
+    background-color: hsl(213, 19%, 23%);
+    border: none;
+}
+
+.numbers button:hover {
+    cursor: pointer;
+    background-color: var(--Orange);
+    color: var(--White);
+}
+
+.numbers button:focus {
+    background-color: var(--Light-Grey);
+    color: var(--White);
+}
+
+.submit button {
+    margin-top: 2em;
+    width: 100%;
+    text-align: center;
+    border-radius: 20px;
+    background-color: var(--Orange);
+    color: var(--White);
+    border: none;
+    padding: .8em;
+    text-transform: uppercase;
+    letter-spacing: .1rem;
+    
+}
+
+.submit button:hover {
+    cursor: pointer;
+    background-color: var(--White);
+    color: var(--Orange);
+}
+
+/* thank you states start */
+.box-thankyou {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 1.6em;
+    gap: 0;
+}
+
+.img-thankyou {
+    max-width: 50%;
+    margin-top: 1em;
+
+}
+
+.img-thankyou img {
+    width: 100%;
+}
+
+.rating-status {
+    border-radius: 50px;
+    width: 60%;
+    background-color: hsl(213, 19%, 23%);
+    height:fit-content;
+    text-align: center;
+    margin: 2em;
+    margin-top: 1.4em;
+}
+
+
+.rating-status p {
+    color: var(--Orange);
+    text-align: center;
+    margin: 0.2em 0.8em;
+    font-size: 0.9em;
+    
+}
+
+.p-thankyou {
+    text-align: center;
+    font-size: 0.82rem;
+}
