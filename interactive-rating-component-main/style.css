@@ -107,10 +107,15 @@ li {
     
 }
 
-.submit button:hover {
+.submit button:not(:disabled):hover {
     cursor: pointer;
     background-color: var(--White);
     color: var(--Orange);
+}
+
+.submit button:disabled {
+    opacity: 0.5;
+    cursor: default;
 }
 
 /* thank you states start */

@@ -43,9 +43,10 @@ Users should be able to:
 - I learned forEach will save its element in an array
 - I learned that for the future project involving submitting a rate or score and display it, use button instead of input.
 
-### Continued development
+### Helpful resources
+- Submission event code from [@MelvinAguilar](https://www.frontendmentor.io/solutions/interactive-rating-component-sass-mobilefirst-bem-UuMjrX1kb0) was very helpful
 
-- I will continue to find a way to prevent a submission if any of the rating buttons were clicked.
+
 
 ## Author
 
