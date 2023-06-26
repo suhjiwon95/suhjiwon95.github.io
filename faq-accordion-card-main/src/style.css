@@ -177,7 +177,7 @@ details[open] .button img {
 
 }
 
-@media (min-width: 400px) and (max-width: 1440px) {
+@media screen and (min-width: 900px) {
     .container {
         max-width: 68em;
         max-height: 40em;
@@ -191,24 +191,22 @@ details[open] .button img {
     
     .left-section .box-illustration {
         position: absolute;
-        width: 16%;
         z-index: 1;
-        top: 22em;
+        top: 24em;
         left: 8em;
     }
     
     .left-section .women-illustration {
-       width: 40%;
        position: absolute;
        left: 10em;
-       top: 12em;
+       top: 16em;
     
     }
     
     .left-section .shadow-illustration {
         position: absolute;
-        left: -28em;
-        top: -14em;
+        left: -20em;
+        top: -10em;
         width: 70%;
     }
 
