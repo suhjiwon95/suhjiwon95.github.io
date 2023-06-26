@@ -21,7 +21,7 @@
 body {
     width: 100%;
     height: 100vh;
-    overflow: hidden;
+    overflow-y: hidden;
     background: linear-gradient(var(--Soft-violet), var(--Soft-blue));
 }
 
@@ -183,36 +183,35 @@ details[open] .button img {
         max-height: 40em;
         padding: 6em;
         padding-right: 4em;
+        overflow: hidden;
     }
 
     .left-section {
-        flex: 1;
+        width: 50%;
+        
     }
-    
+
+  
     .left-section .box-illustration {
-        position: absolute;
+        position: relative;
         z-index: 1;
-        top: 24em;
-        left: 8em;
+        top: 10em;
+        left: -10em;
+        width: fit-content;
+        overflow: hidden;
     }
     
     .left-section .women-illustration {
-       position: absolute;
-       left: 10em;
-       top: 16em;
-    
+       position: relative;
+       left: -10em;
+       top: -12em;
+       width: 120%;
     }
     
     .left-section .shadow-illustration {
-        position: absolute;
-        left: -20em;
-        top: -10em;
-        width: 70%;
-    }
-
-    .right-section {
-        margin-left: 8em;
-
+        position: relative;
+        top: -56em;
+        left: -36em;
     }
 
     .right-section .question {
