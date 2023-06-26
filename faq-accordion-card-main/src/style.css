@@ -29,8 +29,7 @@ body {
     width: 100%;
     display: flex;
     justify-content: center;
-    /* align-items: center; */
-    margin: 80px auto;
+    margin: 10em auto;
     background-color: white;
     border-radius: 20px;
 }
@@ -41,14 +40,12 @@ body {
     width: 100%;
     color: var(--Dark-grayish-blue);
     line-height: 1.5em;
-    margin-top: -4em;
-    
 }
 
 .right-section h1 {
     color: var(--Very-dark-grayish-blue);
     font-size: 40px;
-    margin-bottom: 2em;
+    margin-bottom: 1em;
 }
 
 .right-section hr {
@@ -85,6 +82,7 @@ details > summary {
 .summary:hover{
     color: var(--Soft-red);
 }
+
 details[open] .summary {
     color: var(--Very-dark-desaturated-blue);
     font-weight: 700;
@@ -113,9 +111,6 @@ details[open] .button img {
     font-weight: 400;
     margin-top: 1em;
 }
-
-
-
 
 @media (max-width: 375px) {
    
@@ -174,16 +169,19 @@ details[open] .button img {
 
     .right-section .question {
         font-size: 16px;
-        
+    }
+
+    .summary:hover{
+        color: var(--Very-dark-desaturated-blue);
     }
 
 }
 
-@media (min-width: 1000px) {
+@media (min-width: 400px) and (max-width: 1440px) {
     .container {
-        max-width: 80em;
-        height: 700px;
-        padding: 10em;
+        max-width: 68em;
+        max-height: 40em;
+        padding: 6em;
         padding-right: 4em;
     }
 
@@ -195,8 +193,8 @@ details[open] .button img {
         position: absolute;
         width: 16%;
         z-index: 1;
-        top: 24em;
-        left: 6em;
+        top: 22em;
+        left: 8em;
     }
     
     .left-section .women-illustration {
@@ -212,7 +210,6 @@ details[open] .button img {
         left: -28em;
         top: -14em;
         width: 70%;
-        
     }
 
     .right-section {
