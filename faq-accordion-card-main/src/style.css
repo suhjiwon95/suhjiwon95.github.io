@@ -72,12 +72,32 @@ body {
     
 }
 
-.answer {
-    margin-bottom: 1em;
-    display: none;
-    z-index: 1;
-    
+details > summary {
+    list-style: none;
+    width: 100%;
 }
+
+.summary {
+    display: flex;
+    justify-content: space-between;
+}
+
+.summary:hover{
+    color: var(--Soft-red);
+}
+details[open] .summary {
+    color: var(--Very-dark-desaturated-blue);
+    font-weight: 700;
+}
+
+details[open] .button img {
+    transform: rotate(180deg);
+}
+
+.button {
+    cursor: pointer;
+}
+
 
 .question {
     cursor: pointer;
@@ -88,23 +108,12 @@ body {
 }
 
 
-.qna-section:hover{
-    font-weight: 700;
+
+.answer {
+    font-weight: 400;
+    margin-top: 1em;
 }
 
-.qna-section:hover .answer{
-    display: block;
-}
-
-
-
-button {
-    cursor: pointer;
-    background: none;
-    border: none;
-    text-align: center;
-   
-}
 
 
 
