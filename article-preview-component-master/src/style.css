@@ -20,6 +20,11 @@ body {
     line-height: 1.5rem;
 }
 
+main {
+    position: absolute;
+    width: 100%;
+}
+
 #card {
     max-width: 90vw;
     margin: 10em auto;
@@ -100,10 +105,15 @@ body {
 #share-icons-wrapper {
     display: none;
     background-color: var(--Very-Dark-Grayish-Blue);
+    max-width: 90vw;
     width: 100%;
+    position: relative;
+    top: -11em;
+    left: 1.44em;
     border-bottom-left-radius: 6px;
     border-bottom-right-radius: 6px;
     padding: 1em 2em;
+    box-shadow: 10px 20px 40px -26px var(--Grayish-Blue);
 }
 
 .share-icons {
@@ -130,6 +140,10 @@ body {
 
 footer {
     text-align: center;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    
 }
 
 
@@ -188,4 +202,25 @@ footer {
         width: 4em;
         margin-right: 3em;
     }
+
+    #share-icons-wrapper {
+        max-width: 240px;
+        width: 100%;
+        border-top-left-radius: 6px;
+        border-top-right-radius: 6px;
+        position: relative;
+        top: -25em;
+        left: 83em;
+        padding: 1.4em 2.4em;
+        box-shadow: 10px 20px 40px -26px var(--Grayish-Blue);
+    }
+
+    #share-icons-wrapper .share-icons button {
+        margin-left: 1.2em;
+    }
+
+    #share-icons-wrapper .share-icons #share-button {
+        display: none;
+    }
+
 }
