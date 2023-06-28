@@ -82,22 +82,22 @@ main {
     color: var(--Grayish-Blue);
 }
 
-.share-button button {
+.share-button-wrapper {
     border: none;   
     text-align: center;
     margin-top: 0.5em;
 }
 
-.share-button #share-button,
-.share-icons #share-button {
+.share-button{
     border-radius: 50%;
     height: 2em;
     width: 2em;
     background-color: var(--Light-Grayish-Blue);
+    border: none;
     cursor: pointer;
 }
 
-.share-button #share-button:hover {
+.share-button:hover {
     background-color: var(--Desaturated-Dark-Blue);
     color: white;
 }
@@ -131,12 +131,6 @@ main {
     cursor: pointer;
 }
 
-.share-icons #share-button {
-    border: none;   
-    text-align: center;
-    background-color: var(--Desaturated-Dark-Blue);
-    color: white;
-}
 
 footer {
     text-align: center;
@@ -146,15 +140,15 @@ footer {
     
 }
 
+/* @media only screen and (min-width: 798px) {} */
+/* @media only screen and (min-width: 992px) {} */
+/* @media only screen and (min-width: 1200px) {} */
 
 @media only screen and (max-width: 600px) {
     #image {
         height: 14em;
     }
 }
-/* @media only screen and (min-width: 600px) {} */
-/* @media only screen and (min-width: 768px) {} */
-/* @media only screen and (min-width: 992px) {} */
 
 @media only screen and (min-width: 1200px) {
     #card {
@@ -197,30 +191,40 @@ footer {
         font-size: 1.2rem;
     }
 
-    .share-button #share-button {
+    .share-button{
         height: 4em;
         width: 4em;
-        margin-right: 3em;
     }
 
     #share-icons-wrapper {
-        max-width: 240px;
+        max-width: 280px;
         width: 100%;
         border-top-left-radius: 6px;
         border-top-right-radius: 6px;
-        position: relative;
-        top: -25em;
-        left: 83em;
-        padding: 1.4em 2.4em;
+        position: absolute;
+        top: 30em;
+        left: 80.5em;
+        padding: 1em 2em;
         box-shadow: 10px 20px 40px -26px var(--Grayish-Blue);
     }
+
+    /* #share-icons-wrapper .share-icons::after {
+        content: "";
+        width: 0;
+        height: 0;
+        border-top: 15px solid hsl(217, 19%, 35%);
+        border-right: 15px solid transparent;
+        border-left: 15px solid transparent;
+        border-bottom: 15px solid transparent;
+        position: inherit;
+        top: 3.4em;
+        right: 8em;
+    } */
 
     #share-icons-wrapper .share-icons button {
         margin-left: 1.2em;
     }
 
-    #share-icons-wrapper .share-icons #share-button {
-        display: none;
-    }
+   
 
 }
