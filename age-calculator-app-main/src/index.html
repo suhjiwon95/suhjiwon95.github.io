@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <link rel="stylesheet" href="style.css">
+  <title>Frontend Mentor | Age calculator app</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body>
+  <main>
+    <article id="card">
+      <section id="date-input">
+        <form action="#">
+          <div class="date-form">
+            <div class="day">
+              <p>Day</p>
+              <input type="text" placeholder="DD" id="day-input">
+              <p class="error">This field is required</p>
+            </div>
+  
+            <div class="month">
+              <p>Month</p>
+              <input type="text" placeholder="MM" id="monthinput">
+              <p class="error">This field is required</p>
+            </div>
+  
+            <div class="year">
+              <p>Year</p>
+              <input type="text" placeholder="YYYY" id="yearinput">
+              <p class="error">This field is required</p>
+            </div>
+          </div>
+          <hr>
+          <div class="button">
+            <button id="button"><img src="../assets/images/icon-arrow.svg" alt="button icon"></button>
+          </div>
+          
+        </form>
+      </section>
+
+      <section id="calculator">
+        <div id="year-calculator">
+          <span>-- </span>years
+        </div>
+        <div id="month-calculator">
+          <span>-- </span>months
+        </div>
+        <div id="day-calculator">
+          <span>-- </span>days
+        </div>
+      </section>
+      
+    </article>
+
+  </main>
+</body>
+<footer>
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Jiwon Suh</a>.
+  </div>
+</footer>
+</html>

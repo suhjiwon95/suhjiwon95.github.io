@@ -1,0 +1,152 @@
+:root {
+    /* primary colors */
+    --Purple: hsl(259, 100%, 65%);
+    --Light-red: hsl(0, 100%, 67%);
+
+    /* neutral colors */
+    --White: hsl(0, 0%, 100%);
+    --Off-white: hsl(0, 0%, 94%);
+    --Light-grey: hsl(0, 0%, 86%);
+    --Smokey-grey: hsl(0, 1%, 44%);
+    --Off-black: hsl(0, 0%, 8%);
+}
+
+@font-face {
+    font-family: "Poppins";
+    src: url(../assets/fonts/Poppins-Bold.ttf);
+}
+
+@font-face {
+    font-family: 'Poppins-ExtraBoldItalic';
+    src: url(../assets/fonts/Poppins-ExtraBoldItalic.ttf);
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    width: 100%;
+    font-size: 32px;
+    font-family: "Poppins";
+    background-color: var(--Off-white);
+}
+
+footer {
+    position: absolute;
+    bottom: 0;
+    font-size: 18px;
+    width: 100%;
+}
+
+#card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 90vw;
+    width: 100%;
+    padding: 1em 0.6em;
+    background-color: var(--White);
+    margin: 1em auto;
+    border-radius: 20px;
+    border-bottom-right-radius: 80px;
+}
+
+#date-input,
+#calculator {
+    min-width: 100%;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.date-form {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 0.4em;
+    
+}
+
+hr {
+    width: 100%;
+    border: 1px solid var(--Light-grey);
+    margin-bottom: 2em;
+}
+
+.date-form input {
+    margin-bottom: .6em;
+    padding: 0.8em;
+    max-width: 4.8em;
+    border: 1px solid var(--Light-grey);
+    border-radius: 10px;
+    font-weight: 800;
+    font-size: 1rem;
+}
+
+.date-form input:focus {
+    border: 1px solid var(--Purple);
+    outline: none;
+    cursor: pointer;
+}
+
+.date-form input::placeholder {
+    font-weight: 700;
+    color: var(--Smokey-grey);
+}
+
+.date-form p {
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    color: var(--Smokey-grey);
+    letter-spacing: .3em;
+}
+
+.date-form .error {
+    text-transform:lowercase;
+    letter-spacing: .1em;
+    font-size: .7rem;
+    color: var(--Light-red);
+    margin-bottom: 3em;
+
+}
+
+.button {
+    position: absolute;
+    top: 15%;
+}
+
+button {
+    background: transparent;
+    border: none;
+    width: 60px;
+    background-color: var(--Purple);
+    border-radius: 50%;
+}
+
+button:hover {
+    cursor: pointer;
+    background-color: var(--Off-black);
+}
+
+button img {
+    padding: 1.4em;
+    width: 100%;
+}
+
+#calculator {
+    font-size: 2.6rem;
+    font-family: "Poppins-ExtraBoldItalic";
+    line-height: 3rem;
+}
+
+#calculator span {
+    color: var(--Purple);
+}
