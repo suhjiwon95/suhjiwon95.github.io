@@ -47,6 +47,7 @@ footer {
     justify-content: center;
     align-items: center;
     max-width: 90vw;
+    max-height: 400px;
     width: 100%;
     padding: 1em 0.6em;
     background-color: var(--White);
@@ -58,6 +59,11 @@ footer {
 #date-input,
 #calculator {
     min-width: 100%;
+}
+
+#date-input {
+    margin-bottom: 1em;
+    max-height: 200px;
 }
 
 form {
@@ -72,13 +78,15 @@ form {
     justify-content: space-between;
     align-items: center;
     gap: 0.4em;
-    margin-bottom: 1em;
 }
 
 hr {
-    width: 100%;
+    width: 80%;
+    margin-top: 1em;
+    margin-bottom: 1em;
     border: 1px solid var(--Light-grey);
-    margin-bottom: 2em;
+    position: absolute;
+    top: 14%;
 }
 
 .date-form input {
@@ -112,16 +120,13 @@ hr {
 .date-form .error {
     display: none;
     text-transform:lowercase;
-    letter-spacing: .1em;
-    font-size: .7rem;
+    font-size: .6rem;
     color: var(--Light-red);
-    margin-bottom: 3em;
-
 }
 
 .button {
     position: absolute;
-    top: 12%;
+    top: 14%;
 }
 
 button {
@@ -146,6 +151,8 @@ button img {
     font-size: 2.6rem;
     font-family: "Poppins-ExtraBoldItalic";
     line-height: 3rem;
+    margin-top: 2em;
+    
 }
 
 #calculator span {
