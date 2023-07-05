@@ -10,8 +10,9 @@ const daysCalculated = document.getElementById('days-calculated');
 
 const mainEvent = (e) => {
     e.preventDefault();
-    // validateInput();
-    getBday();
+    if(!validateInput()) {
+        getBday();
+    }
 }
 
 function getBday() {
@@ -33,22 +34,24 @@ function getBday() {
 }
 
 function validateInput(e) {
-    const inputFields = document.querySelectorAll(".input-field");
-    const error = document.querySelectorAll('.date-form div.error');
     const today = new Date();
+    const errorDay = document.getElementById('error-day');
+    const errorMonth = document.getElementById('error-month');
 
-    // if (dayInput.value > 31) {
-    //     const errorDay = document.querySelector('.date-form #error-day');
-    //     errorDay.innerHTML = "must be a valid day";
-    //     errorDay.style.display = "block";
-    // }
+    if (dayInput.value < 1 || dayInput.value > 31) {
+        errorDay.textContent = "must be a valid day";
+        errorDay.style.display = "block";
+    } else {
+        errorDay.style.display = "none";
+    }
 
-    // if (monthInput.value > 12) {
-    //     const errorMonth = document.querySelector('.date-form #error-month');
-    //     errorMonth.innerHTML = "must be a valid month";
-    //     error.style.display = "block";
+    if (monthInput.value < 1 && monthInput.value > 12) {
+        errorMonth.textContent = "must be a valid month";
+        error.style.display = "block";
     
-    // }
+    } else {
+        errorMonth.style.display = "none";
+    }
 
     // if (yearInput.value > today.getMonth()) {
     //     error.innerHTML = "must be a valid year";
