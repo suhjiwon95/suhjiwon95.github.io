@@ -10,13 +10,12 @@ const daysCalculated = document.getElementById('days-calculated');
 
 const mainEvent = (e) => {
     e.preventDefault();
-    if(!validateInput()) {
-        getBday();
-    }
+    validateInput();
+    getBday();
+
 }
 
 function getBday() {
-
     const bDayInput = `${yearInput.value}-${monthInput.value}-${dayInput.value}`;
     const birthDate = moment(bDayInput);
     const today = moment();
@@ -52,7 +51,7 @@ function validateInput(e) {
     } else {
         errorMonth.style.display = "none";
     }
-
+    
     // if (yearInput.value > today.getMonth()) {
     //     error.innerHTML = "must be a valid year";
     //     errorMonth.style.display = "block";

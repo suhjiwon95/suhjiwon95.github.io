@@ -159,3 +159,53 @@ button img {
     color: var(--Purple);
 }
 
+@media screen and (min-width: 800px) {
+    #card {
+        max-width: 50vw;
+        max-height: 800px;
+        justify-content: center;
+        align-items: flex-start;
+        padding: 1.6em 1.8em;
+        border-bottom-right-radius:200px;
+    }
+
+    #date-input {
+        min-width: fit-content;
+    }
+
+    .date-form {
+        justify-content: center;
+    }
+
+    .date-form input {
+        max-width: 5em;
+        font-size: 1.6rem;
+        margin-top: .3em;
+    }
+
+    .date-form .error {
+        font-size: .8rem;
+        margin-bottom: 1em;
+    }
+
+    hr {
+        text-align: left;
+        margin-left: 4.5em;
+        width: 38%;
+        top: 18%;
+    }
+
+    .button {
+        top: 17.5%;
+        right: 14em;
+    }
+
+    button {
+        width: 80px;
+    }
+
+    #calculator {
+        font-size: 4rem;
+        line-height: 4.5rem;
+    }
+}
