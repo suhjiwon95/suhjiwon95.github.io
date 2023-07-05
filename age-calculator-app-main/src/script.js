@@ -4,22 +4,26 @@ const yearInput = document.getElementById('year-input');
 const button = document.getElementById('button');
 const error = document.getElementsByClassName('error');
 const yearCalculated = document.getElementById('year-calculated');
+const monthsCalculated = document.getElementById('months-calculated');
+const daysCalculated = document.getElementById('days-calculated');
 
 const getBday = () => {
-
-    const today = new Date();
-    const todayMoment = moment(today);
-    const birthday = new Date(yearInput.value, monthInput.value - 1, dayInput.value);
-    const bdayMoment = moment(birthday);
-    const difference = todayMoment.from(bdayMoment);
+    const bDayInput = `${yearInput.value}-${monthInput.value}-${dayInput.value}`;
+    const birthDate = moment(bDayInput);
+    const today = moment();
+    
+    const years = today.diff(birthDate, 'years');
+    const months = today.diff(birthDate, 'months') % 12;
+    const days = today.diff(birthDate, 'days') % 30;
   
-    console.log();
-    yearCalculated.textContent = difference;
 
-    
+    yearCalculated.textContent = years;
+    monthsCalculated.textContent = months;
+    daysCalculated.textContent = days;
+
+    console.log( years + " years " + months + " months " + days + " days");
 
 
-    
 }
 
 button.addEventListener('click', getBday);
