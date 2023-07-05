@@ -72,7 +72,7 @@ form {
     justify-content: space-between;
     align-items: center;
     gap: 0.4em;
-    
+    margin-bottom: 1em;
 }
 
 hr {
@@ -110,6 +110,7 @@ hr {
 }
 
 .date-form .error {
+    display: none;
     text-transform:lowercase;
     letter-spacing: .1em;
     font-size: .7rem;
@@ -120,7 +121,7 @@ hr {
 
 .button {
     position: absolute;
-    top: 15%;
+    top: 12%;
 }
 
 button {
@@ -150,3 +151,4 @@ button img {
 #calculator span {
     color: var(--Purple);
 }
+
