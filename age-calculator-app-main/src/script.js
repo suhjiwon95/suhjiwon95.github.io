@@ -9,63 +9,84 @@ const daysCalculated = document.getElementById('days-calculated');
 
 
 const mainEvent = (e) => {
-    e.preventDefault();
-    validateInput();
     getBday();
-
 }
 
-function getBday() {
-    const bDayInput = `${yearInput.value}-${monthInput.value}-${dayInput.value}`;
-    const birthDate = moment(bDayInput);
-    const today = moment();
+function getBday(e) {
+    
+    const validation = validateInput();
 
-    const years = today.diff(birthDate, 'years');
-    const months = today.diff(birthDate, 'months') % 12;
-    const days = today.diff(birthDate, 'days') % 30;
-  
-    yearCalculated.textContent = years;
-    monthsCalculated.textContent = months;
-    daysCalculated.textContent = days;
+    if(validation === true) {
+        const bDayInput = `${yearInput.value}-${monthInput.value}-${dayInput.value}`;
+        const birthDate = moment(bDayInput);
+        const today = moment();
+    
+        const years = today.diff(birthDate, 'years');
+        const months = today.diff(birthDate, 'months') % 12;
+        const days = today.diff(birthDate, 'days') % 30;
+    
+        yearCalculated.textContent = years;
+        monthsCalculated.textContent = months;
+        daysCalculated.textContent = days;
+    } else {
+        e.preventDefault();
+    }
+   
 
-    // return years + " years " + months + " months " + days + " days";
-
+    
 }
 
-function validateInput(e) {
+function validateInput() {
     const today = new Date();
     const errorDay = document.getElementById('error-day');
     const errorMonth = document.getElementById('error-month');
+    const erroryear = document.getElementById('error-year');
 
+
+    // checks the day input
     if (dayInput.value < 1 || dayInput.value > 31) {
         errorDay.textContent = "must be a valid day";
         errorDay.style.display = "block";
+         
+    } else if (dayInput.value === '') {
+        errorDay.textContent = "This field is required";
+        errorMonth.style.display = "block";
     } else {
         errorDay.style.display = "none";
     }
 
-    if (monthInput.value < 1 && monthInput.value > 12) {
+    // checks the month input
+    if (monthInput.value < 1 || monthInput.value > 12) {
         errorMonth.textContent = "must be a valid month";
-        error.style.display = "block";
-    
+        errorMonth.style.display = "block";
+        
+    } else if (monthInput.value === '') {
+        errorDay.textContent = "This field is required";
+        errorMonth.style.display = "block";
     } else {
         errorMonth.style.display = "none";
     }
+
+    // checks the year input
+    if (yearInput.value > today.getFullYear()) {
+        erroryear.textContent = "must be in the past";
+        erroryear.style.display = "block";
+        
+    } else if (yearInput.value === '') {
+        erroryear.textContent = "This field is required";
+        erroryear.style.display = "block";
+    } else {
+        erroryear.style.display = "none";
+    }
     
-    // if (yearInput.value > today.getMonth()) {
-    //     error.innerHTML = "must be a valid year";
-    //     errorMonth.style.display = "block";
-    // }
-    
-//    inputFields.forEach((input) => {
-//     if (input.value.length == 0) {
-//         console.log(`input field ${input.value} is empty`);
-//         error.style.display = "block";
-//         error.textContent = "this must be provided";
-//     } else {
-//         error.style.className = "none";
-//     }
-//    });
+    if (errorDay.style.display === "block" ||
+        errorMonth.style.display === "block" ||
+        erroryear.style.display === "block" ) {
+        
+            return false;
+    } else {
+        return true;
+    }
 
 
 
