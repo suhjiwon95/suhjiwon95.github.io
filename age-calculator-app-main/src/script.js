@@ -30,6 +30,7 @@ function getBday(e) {
         daysCalculated.textContent = days;
     } else {
         e.preventDefault();
+        
     }
    
 
@@ -41,48 +42,48 @@ function validateInput() {
     const errorDay = document.getElementById('error-day');
     const errorMonth = document.getElementById('error-month');
     const erroryear = document.getElementById('error-year');
-
+    const isnum = /^\d+$/;
 
     // checks the day input
-    if (dayInput.value < 1 || dayInput.value > 31) {
+    if (dayInput.value < 1 || dayInput.value > 31 || isnum.test(dayInput.value) === false) {
         errorDay.textContent = "must be a valid day";
-        errorDay.style.display = "block";
-         
+        errorDay.style.opacity = 1;
+    
     } else if (dayInput.value === '') {
         errorDay.textContent = "This field is required";
-        errorMonth.style.display = "block";
+        errorDay.style.opacity = 1;
+        
     } else {
-        errorDay.style.display = "none";
+        console.log(`${dayInput.value}`);
     }
 
     // checks the month input
-    if (monthInput.value < 1 || monthInput.value > 12) {
+    if (monthInput.value < 1 || monthInput.value > 12 || isnum.test(monthInput.value) === false) {
         errorMonth.textContent = "must be a valid month";
-        errorMonth.style.display = "block";
+        errorMonth.style.opacity = 1;
         
     } else if (monthInput.value === '') {
         errorDay.textContent = "This field is required";
-        errorMonth.style.display = "block";
-    } else {
-        errorMonth.style.display = "none";
-    }
+        errorMonth.style.opacity = 1;
+    } 
 
     // checks the year input
     if (yearInput.value > today.getFullYear()) {
         erroryear.textContent = "must be in the past";
-        erroryear.style.display = "block";
+        erroryear.style.opacity = 1;
         
     } else if (yearInput.value === '') {
         erroryear.textContent = "This field is required";
-        erroryear.style.display = "block";
-    } else {
-        erroryear.style.display = "none";
+        erroryear.style.opacity = 1;
+
+    } else if (isnum.test(yearInput.value) === false) {
+        erroryear.textContent = "must be a valid year";
+        erroryear.style.opacity = 1;
     }
     
-    if (errorDay.style.display === "block" ||
-        errorMonth.style.display === "block" ||
-        erroryear.style.display === "block" ) {
-        
+    if (errorDay.style.opacity === 1 ||
+        errorMonth.style.opacity === 1 ||
+        erroryear.style.opacity === 1 ) {
             return false;
     } else {
         return true;
