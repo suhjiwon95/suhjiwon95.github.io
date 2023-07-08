@@ -117,13 +117,16 @@ hr {
     letter-spacing: .3em;
 }
 
-.date-form .error {
+.date-form .error,
+.error-active {
     opacity: 0%;
     text-transform: lowercase;
     font-size: .6rem;
     color: var(--Light-red);
     margin-left: .4em;
 }
+
+
 
 .date-form .error:active {
     opacity: 100%;
@@ -188,7 +191,8 @@ button img {
         margin-top: .3em;
     }
 
-    .date-form .error {
+    .date-form .error,
+    .error-active {
         max-width: 12em;
         font-size: .8rem;
         margin-bottom: 1em;
@@ -196,13 +200,13 @@ button img {
 
     hr {
         text-align: left;
-        margin-left: 4.5em;
-        width: 38%;
-        top: 18%;
+        margin-left: 3.4em;
+        width: 40%;
+        top: 22%;
     }
 
     .button {
-        top: 17.5%;
+        top: 21.5%;
         right: 14em;
     }
 
