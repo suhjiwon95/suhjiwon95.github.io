@@ -119,11 +119,16 @@ hr {
 
 .date-form .error,
 .error-active {
-    opacity: 0%;
+    /* opacity: 0%; */
     text-transform: lowercase;
     font-size: .6rem;
     color: var(--Light-red);
     margin-left: .4em;
+    display: none;
+    -webkit-user-select: none; /* Safari */
+    -moz-user-select: none; /* Firefox */
+    -ms-user-select: none; /* IE/Edge */
+    user-select: none;
 }
 
 
@@ -171,7 +176,7 @@ button img {
     #card {
         max-width: 50vw;
         max-height: 800px;
-        justify-content: center;
+        /* justify-content: center; */
         align-items: flex-start;
         padding: 1.6em 1.8em;
         border-bottom-right-radius:200px;
@@ -182,7 +187,8 @@ button img {
     }
 
     .date-form {
-        justify-content: center;
+        /* justify-content: center; */
+        align-items: flex-start;
     }
 
     .date-form input {
