@@ -164,7 +164,7 @@ button img {
     font-size: 2.6rem;
     font-family: "Poppins-ExtraBoldItalic";
     line-height: 3rem;
-    margin-top: 1em;
+    margin-top: 2em;
     
 }
 
@@ -172,9 +172,9 @@ button img {
     color: var(--Purple);
 }
 
-@media screen and (min-width: 800px) {
+@media screen and (min-width: 1000px) {
     #card {
-        max-width: 50vw;
+        max-width: 710px;
         max-height: 800px;
         /* justify-content: center; */
         align-items: flex-start;
@@ -206,14 +206,15 @@ button img {
 
     hr {
         text-align: left;
-        margin-left: 3.4em;
-        width: 40%;
-        top: 22%;
+        margin-left: 2.6em;
+        max-width: 570px;
+        top: 20%;
     }
 
     .button {
-        top: 21.5%;
-        right: 14em;
+        position: absolute;
+        top: 236px;
+        right: 440px;
     }
 
     button {
@@ -223,5 +224,6 @@ button img {
     #calculator {
         font-size: 5.5rem;
         line-height: 5.2rem;
+        margin-top: 1.5em;
     }
 }
