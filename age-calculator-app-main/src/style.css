@@ -36,9 +36,10 @@ body {
 
 footer {
     position: absolute;
-    bottom: 0;
+    bottom: 10;
     font-size: 18px;
     width: 100%;
+    text-align: center;
 }
 
 #card {
@@ -171,6 +172,8 @@ button img {
 #calculator span {
     color: var(--Purple);
 }
+
+
 
 @media screen and (min-width: 1000px) {
     #card {
