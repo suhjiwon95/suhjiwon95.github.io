@@ -44,8 +44,8 @@ footer {
 #card {
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    justify-content: space-around;
+    align-items: flex-start;
     max-width: 90vw;
     max-height: 400px;
     width: 100%;
@@ -76,7 +76,7 @@ form {
 .date-form {
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    align-items: flex-start;
     gap: 0.4em;
 }
 
@@ -176,7 +176,6 @@ button img {
     #card {
         max-width: 710px;
         max-height: 800px;
-        /* justify-content: center; */
         align-items: flex-start;
         padding: 1.6em 1.8em;
         border-bottom-right-radius:200px;
@@ -186,8 +185,11 @@ button img {
         min-width: fit-content;
     }
 
+    form {
+        align-items: flex-start;
+    }
+
     .date-form {
-        /* justify-content: center; */
         align-items: flex-start;
     }
 
@@ -206,24 +208,25 @@ button img {
 
     hr {
         text-align: left;
-        margin-left: 2.6em;
-        max-width: 570px;
+        max-width: 530px;
         top: 20%;
     }
 
     .button {
-        position: absolute;
-        top: 236px;
-        right: 440px;
+        position: relative;
+        /* width: 100%; */
+        left: 480px;
+        top: 20px;
     }
 
     button {
         width: 80px;
+    
     }
 
     #calculator {
-        font-size: 5.5rem;
-        line-height: 5.2rem;
-        margin-top: 1.5em;
+        font-size: 5.8rem;
+        line-height: 5.5rem;
+        margin-top: 0.2em;
     }
 }
