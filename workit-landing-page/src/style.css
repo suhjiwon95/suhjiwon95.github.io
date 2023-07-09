@@ -1,0 +1,241 @@
+:root {
+    --Purple-main: hsl(273, 85%, 13%);
+    --Soft-purple: hsl(271, 12%, 34%);
+    --Light-purple: hsl(276, 100%, 99%);
+    --Green-accent: hsl(150, 100%, 63%);
+    --White: #FFF; 
+}
+
+@font-face {
+    /* Heading */
+    font-family: "Fraunces144_SemiBold"; 
+    src: url(../assets/fonts/fraunces/Fraunces-VariableFont_SOFT\,WONK\,opsz\,wght.ttf);
+}
+
+@font-face {
+    /* paragraph */
+    font-family: "Manrope_regular";
+    src: url(../assets/fonts/manrope/Manrope-VariableFont_wght.ttf);
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    width: 100vw;
+}
+
+#heading,
+#hero-main {
+    background-color: var(--Purple-main);
+}
+
+#heading {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 2em;
+}
+
+#hero-main,
+#hero-overview div {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+
+#hero-main {
+    position: relative;
+    width: 100%;
+    /* Curved corners */
+    border-radius: 100%/0 0 50px 50px;
+    height: 342px;
+    z-index: 0;
+    gap: 3em;
+}
+
+#hero-overview {
+    width: 100%;
+    margin-top: -2em;
+    padding-top: 9em;
+    background-color: var(--Light-purple);
+    border-radius: 100%/0 0 50px 50px;
+    color: var(--Purple-main);
+    padding-bottom: 3em;
+}
+
+#hero-overview div {
+    gap: 1em;
+    margin-top: 2em;
+}
+
+#hero-main span {
+    text-decoration: underline solid 2px var(--Green-accent);
+    text-underline-offset: .1em;
+}
+
+a {
+    cursor: pointer;
+}
+
+#heading ul li a{
+    color: var(--White);
+    text-decoration: none;
+}
+
+#heading ul li a:hover {
+    color: var(--Green-accent);
+}
+
+#heading ul li {
+    border-bottom: 2px solid var(--Green-accent);
+    padding-bottom: 0.1em;
+}
+
+#heading .logo {
+    width: 6em;
+}
+
+h1 {
+    color: var(--White);
+}
+
+.number {
+    border: 1px solid var(--Purple-main);
+    border-radius: 50%;
+    width: 48px;
+    height: 48px;
+    text-align: center;
+    padding: .25em 0;
+    font-size: 1.25rem;
+
+}
+
+.button {
+    width: 133px;
+}
+
+button {
+    cursor: pointer;
+    width: 100%;
+    padding: 1.2em 1em;
+    background-color: var(--Green-accent);
+    font-family: "Manrope_regular";
+    border: 1px solid var(--Green-accent);
+    font-weight: bold;
+}
+
+button:hover {
+    color: var(--Green-accent);
+    border: 1px solid var(--Green-accent);
+    background-color: transparent;
+}
+
+#apply {
+    margin: 3em 0;
+}
+
+.apply-description {
+    position: relative;
+    background-color: var(--Purple-main);
+    color: var(--Light-purple);
+    padding: 1.4em;
+    text-align: center;
+    margin-top: -3.4em;
+    z-index: 1;
+}
+
+.apply-description p {
+    margin: 1em 0;
+}
+
+.apply-description .button {
+    width: 172px;
+}
+
+.apply-description button {
+    width: 100%;
+    margin: 1.2em 0;
+}
+
+footer {
+    position: relative;
+    text-align: center;
+}
+
+.links ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 2em;
+}
+
+.links ul li {
+    list-style: none;
+    margin: 1em;
+}
+
+
+@media screen and (min-width: 320px) {
+
+    section {
+        padding: 2em 1em;
+    }
+
+    .hero-img {
+        max-width: 320px;
+    }
+
+    .hero-img img {
+        width: 100%;
+    }
+
+    h1 {
+        font-family: "Fraunces144_SemiBold"; 
+        font-size: 2.6rem;
+        line-height: 2.6rem;
+        font-weight: 500;
+    }
+    
+    h2 {
+        font-family: "Fraunces144_SemiBold"; 
+        font-size: 32px;
+        line-height: 48px;
+    }
+    
+    h3 {
+        font-family: "Fraunces144_SemiBold"; 
+        font-size: 28px;
+        line-height: 36px;
+    }
+    
+    p {
+        font-family: "Manrope_regular";
+        font-size: 16px;
+        line-height: 28px;
+    }
+
+    .avatar {
+        width: 281px;
+    }
+
+    .apply-description h2 {
+        font-size: 1.5rem;
+    }
+
+    .apply-description p {
+        font-size: .9rem;
+    }
+
+    #apply {
+        text-align: center;
+    }
+
+}
+
