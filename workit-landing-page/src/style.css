@@ -407,13 +407,14 @@ footer {
 
     #hero-main {
         border-radius: 100%/0 0 150px 150px;
+        min-height: 730px;
     }
 
     #bg-pattern-right {
         display: block;
         position: absolute;
         left: 83em;
-        top: 8em;
+        top: 27em;
         width: 147px;
     }
 
@@ -425,21 +426,52 @@ footer {
         width: 270px;
     }
 
+    h1 {
+        font-size: 80px;
+        line-height: 80px;
+        max-width: 635px ;
+        margin-top: .5em;
+    }
+
+    h3 {
+        font-size: 32px;
+        line-height: 40px;
+    }
+
+    .button {
+        width: 161px;
+        margin-bottom: 22em;
+    }
+
+    button {
+        font-size: 18px;
+        
+    }
+
+    #heading {
+        padding: 5em 8em;
+    }
+
+    #heading a {
+        font-size: 18px;
+    }
+
     #hero-overview {
         display: flex;
         flex-wrap: wrap;
         padding: 2em;
+        padding-bottom: 6em;
         justify-content: center;
         border-radius: 100%/0 0 150px 150px;
     }
 
     #hero-overview .hero-img {
         position: relative;
-        margin-top: -8em;
+        margin-top: -18em;
         z-index: 1;
-        width: 500px;
-        margin-left: 29em;
-        margin-right: 29em;
+        width: 767px;
+        margin-left: 12em;
+        margin-right: 10em;
     }
     #hero-overview .hero-img img {
         width: 100%;
@@ -472,6 +504,8 @@ footer {
         margin-top: 0em;
         margin-left: 0em;
         margin-bottom: 2em;
+        font-size: 18px;
+        line-height: 32px;
     }
 
     #apply {
@@ -485,14 +519,29 @@ footer {
     }
 
     #apply .apply-description {
-        width: 46em;
+        width: 730px;
+        height: 413px;
         text-align: left;
         left: 32em;
         top: -12em;
+        padding: 4em;
+        align-items: flex-start;
+    }
+
+    #apply .apply-description p {
+        font-size: 18px;
     }
 
     #apply .apply-description h2 {
-        text-align: left;
+        font-size: 56px;
+    }
+
+    #apply .apply-description button {
+        width: 190px;
+    }
+
+    #apply .apply-description #bg-pattern-bottom {
+        top: 20em;
     }
 }
 
