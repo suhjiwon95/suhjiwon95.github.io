@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;800&display=swap');
+
+:root {
+    --Dark-navy: #13183F;
+    --Blue-gray: #666CA3;
+    --Gray: #83869A;
+    --Hot-pink: #F74780;
+    --Baby-pink: #FFA7C3;
+    --White: #FFF;
+    font-size: 16px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+}
+
+body,
+main {
+    width: 100%;
+}
+
+.container {
+    padding: 1em;
+    margin: 0 auto;
+    
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    width: 100%;
+}
+
+button {
+    width: 100%;
+    color: var(--White);
+    border-radius: 40px;
+    padding: .8rem 1.25rem;
+    margin-top: .8em;
+    text-align: center;
+    border: none;
+    font-size: 16px;
+    font-weight: 800;
+}
+
+.button1 {
+    background-color: var(--Dark-navy);
+
+}
+
+.button2 {
+    background-image: linear-gradient( hsl(322, 87%, 55%), hsl(13, 100%, 64%));
+}
+
+.hero-img {
+    width: 100%;
+}
+
+.hero-img-wrapper {
+    margin: 0 auto;
+}
+
+.main-content-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin: 2em 0;
+}
+
+.main-content-wrapper div {
+    margin: .8em 0;
+}
+
+.main-content h1 {
+    margin-bottom: .4em;
+}
+
+.main-content-wrapper p {
+    color: var(--Gray);
+}
+
+@media screen and (min-width: 320px) {
+
+
+    .logo-wrapper {
+        width: 89px;
+    }
+
+    .button {
+        width: 140px;
+    }
+
+    button {
+        font-size: 1rem;
+    }
+
+    .main-content-wrapper h1 {
+        font-size: 40px;
+        line-height: 51px;
+    }
+    .main-content-wrapper p {
+        font-size: 1rem;
+        line-height: 26px;
+    }
+
+    .hero-img-wrapper {
+        width: 327px;
+    }
+}
