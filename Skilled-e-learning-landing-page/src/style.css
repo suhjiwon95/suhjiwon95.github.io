@@ -187,6 +187,8 @@ footer {
     align-items: center;
     padding: 2em;
     background-color: var(--Dark-navy);
+    position: relative;
+    bottom: 0;
 }
 
 .button3 {
@@ -272,6 +274,7 @@ button:hover {
 
     #courses-grid {
         margin-top: -16em;
+        padding-bottom: 6em;
     }
 
     .courses-grid-title {
@@ -340,6 +343,7 @@ button:hover {
 
     #courses-grid {
         margin-top: -32em;
+        padding-bottom: 10em;
     }
 
 }
