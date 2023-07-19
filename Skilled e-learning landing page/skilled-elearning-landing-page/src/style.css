@@ -2,7 +2,7 @@
 
 :root {
     --Dark-navy: #13183F;
-    --Blue-gray: #666CA3;
+    --Blue-gray: hsl(234, 25%, 52%);
     --Gray: #83869A;
     --Hot-pink: #F74780;
     --Baby-pink: #FFA7C3;
@@ -18,14 +18,17 @@
 }
 
 body,
-main {
+main,
+section {
     width: 100%;
 }
 
 .container {
     padding: 1em;
+    padding-bottom: 2em;
     margin: 0 auto;
-    
+    background: linear-gradient( var(--White) 20%, #F0F1FF );
+    overflow: hidden;
 }
 
 header {
@@ -39,14 +42,18 @@ header {
 }
 
 button {
+    cursor: pointer;
     width: 100%;
+    position: relative;
+    z-index: 6500;
+    opacity: 100%;
     color: var(--White);
     border-radius: 40px;
     padding: .8rem 1.25rem;
-    margin-top: .8em;
     text-align: center;
     border: none;
     font-size: 16px;
+    font-weight: 500;
     font-weight: 800;
 }
 
@@ -55,16 +62,24 @@ button {
 
 }
 
-.button2 {
-    background-image: linear-gradient( hsl(322, 87%, 55%), hsl(13, 100%, 64%));
+.button1:hover {
+    cursor: pointer;
+    background-color: var(--Blue-gray);
 }
 
-.hero-img {
-    width: 100%;
+.button2 {
+    background: linear-gradient( hsl(322, 87%, 55%), hsl(13, 100%, 64%));
+    width: 167px;
+    padding: 1em 0;
+    margin-top: 1em;
 }
 
 .hero-img-wrapper {
     margin: 0 auto;
+}
+
+.hero-img {
+    width: 100%;
 }
 
 .main-content-wrapper {
@@ -73,6 +88,7 @@ button {
     justify-content: space-between;
     align-items: flex-start;
     margin: 2em 0;
+    margin-bottom: 0;
 }
 
 .main-content-wrapper div {
@@ -87,8 +103,120 @@ button {
     color: var(--Gray);
 }
 
-@media screen and (min-width: 320px) {
+#courses-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+    gap: 1em;
+    padding-bottom: 2em;
+}
 
+.courses-grid-title {
+    background: linear-gradient(hsl(13, 100%, 64%), hsl(322, 87%, 55%));
+    color: var(--White);
+    border-radius: 10px;
+    width: 100%;
+    line-height: 40px;
+    
+}
+
+.grid {
+    margin: 1em 0;
+    background-color: var(--White);
+    padding: 1em 1.6em;
+    padding-bottom: 2em;
+    border-radius: 10px;
+}
+
+.grid-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 1.4em;
+    margin-top: -2.8em;
+}
+
+.icon {
+    width: 56px;
+}
+
+ul li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    opacity: 100%;
+    font-size: 18px;
+    color: var(--Hot-pink);
+    font-weight: 800;
+}
+
+a:hover {
+    opacity: 70%;
+}
+
+.link {
+    
+    margin-top: .4em;
+    width: 104px;
+    height: 28px;
+}
+
+.link:hover {
+    cursor: pointer;
+    opacity: 70%;
+}
+
+h3 {
+    font-size: 20px;
+}
+
+.grid p {
+    font-size: 16px;
+    color: var(--Gray);
+    line-height: 26px;
+    padding-right: 1em;
+    height: 84px;
+    margin-bottom: 1.8em;
+}
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2em;
+    background-color: var(--Dark-navy);
+}
+
+.button3 {
+    width: 140px;
+    margin-top: 0;
+    background: linear-gradient(hsl(237, 100%, 64%), hsl(322, 87%, 55%));
+}
+
+
+.hero-img-wrapper-desktop {
+    display: none;
+}
+
+.hero-img-wrapper-tablet {
+    display: none;
+}
+
+
+button:hover {
+    opacity: 70%;
+}
+
+
+@media screen and (min-width: 320px) {
+   
+
+    .hero-img-wrapper-mobile {
+        width: 327px;
+        align-self: center;
+    }
 
     .logo-wrapper {
         width: 89px;
@@ -111,7 +239,107 @@ button {
         line-height: 26px;
     }
 
-    .hero-img-wrapper {
-        width: 327px;
+    
+
+}
+
+@media screen and (min-width: 768px) {
+    .container {
+        padding: 2em;
     }
+
+    .main-content-wrapper {
+        flex-direction: row;
+        justify-content: space-between;
+        margin: 4em 0;
+
+    }
+
+    .hero-img-wrapper-mobile {
+        display: none;
+    }
+
+    .hero-img-wrapper-tablet {
+        display: block;
+        width: 640px;
+        position: relative;
+        top: -13em;
+    }
+
+    .hero-img-tablet {
+        width: 200%;
+    }
+
+    #courses-grid {
+        margin-top: -16em;
+    }
+
+    .courses-grid-title {
+        margin-bottom: 0em;
+        padding-top: 3em;
+    }
+
+    .grid {
+        margin: 1.4em 0;
+    }
+} 
+
+@media screen and (min-width: 1440px) {
+
+    .container,
+    footer {
+        padding: 2em 14em;
+    }
+
+    .logo-wrapper {
+        width: 112px;
+    }
+
+    button,
+    .button3 {
+        width: 167px;
+        font-size: 18px;
+        padding: 1em 1.2em;
+    }
+
+    .main-content-wrapper {
+        margin: 11em 0;
+    }
+
+    .main-content p {
+        font-size: 18px;
+        line-height: 28px;
+        padding-right: 4em;
+    }
+    
+    .main-content-wrapper h1 {
+        font-size: 56px;
+        line-height: 70px;
+    }
+
+    .main-content-wrapper h1 p {
+        font-size: 18px;
+        line-height: 28px;
+    }
+
+    .hero-img-wrapper-tablet {
+        display: none;
+    }
+
+    .hero-img-desktop {
+        width: 206%;
+    }
+
+    .hero-img-wrapper-desktop {
+        display: block;
+        width: 992px;
+        position: relative;
+        top: -24em;
+
+    }
+
+    #courses-grid {
+        margin-top: -32em;
+    }
+
 }
