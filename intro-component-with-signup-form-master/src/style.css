@@ -10,8 +10,9 @@
 
     /* secondary colors */
     --soft-purple: #A6A1CF;
-    --gray: hsl(246, 25%, 77%);
+    --gray: #b9b6d3;
     --soft-pink: #FF7979;
+    --border-gray: #DEDEDE;
 
     /* shadow */
     --shadow: #3d3b483c;
@@ -45,7 +46,7 @@ body {
 #hero-wrapper {
     text-align: center;
     margin: 1em 0;
-    padding: 1.6em;
+    padding: 1.2em;
 }
 
 h1 {
@@ -60,7 +61,7 @@ h2 {
     text-align: center;
     background-color: var(--Purple);
     border-radius: 10px;
-    padding: 1em 2.2em;
+    padding: 1.4em 2.2em;
     box-shadow: 0px 8px var(--shadow);
     margin-bottom: 2em;
 }
@@ -80,10 +81,12 @@ button {
     color: white;
 }
 
-#form-wrapper {
-    padding: 1.6em;
-    background-color: white;
+button:hover {
+    opacity: 70%;
+}
 
+#form-wrapper {
+   padding: 1em;
 }
 
 .form {
@@ -91,33 +94,85 @@ button {
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
+    padding: 1.6em;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0px 8px var(--shadow);
 }
 
 .form div {
-    margin-bottom: 1em;
+    margin-bottom: .6em;
 }
 
 .input-wrapper {
     width: 280px;
+    display: flex;
+    flex-direction: column;
+}
 
+.error-msg {
+    display: none;
+    font-size: 11px;
+    font-weight: 500;
+    font-style: italic;
+    color: var(--soft-pink);
+    text-align: end;
+    margin-top: -0.4em;
 }
 
 input {
     width: 100%;
     font-size: 14px;
     font-weight: 600;
-    padding: 1em;
+    padding: 1.2em;
+    border-radius: 6px;
+    border: 1px solid var(--border-gray);
 }
 
-.error-msg {
-    font-size: 11px;
-    font-weight: 500;
-    font-style: italic;
-    color: var(--soft-pink);
+
+/* input:not(:focus):invalid {
+    border-color: var(--Pink);
+}
+
+input:not(:focus):invalid ~ .error-msg {
+    display: block;
+} */
+
+
+
+.error-icon {
+    position: absolute;
+    left: 292px;
+    margin-top: .8em;
+}
+
+.error-icon img {
+   width: 24px;
+   height: 24px;
+   text-align: center;
+}
+
+
+.button {
+    width: 100%;
+}
+
+button {
+    background-color: var(--Green);
+    text-transform: uppercase;
+    padding: 1.2em 2.2em;
+    width: 100%;
+    border: none;
+    box-shadow: 0px 5px var(--shadow);
+    border-radius: 6px;
+    margin-bottom: .6em;
 }
 
 .terms p {
     font-size: 11px;
+    color: var(--gray);
+    text-align: center;
+    padding: 0 1.4em;
 }
 
 .terms a {
@@ -126,5 +181,10 @@ input {
 }
 
 .hidden {
-    /* display: none; */
+    display: none;
+}
+
+footer p {
+    font-size: 11px;
+    text-align: center;
 }
