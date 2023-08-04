@@ -109,18 +109,20 @@ button {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
-    align-items: center;
-    gap: .5em;
-   
+    align-items: flex-start;
+    
+
 }
 .menu-header {
     display: flex;
     justify-content: flex-start;
     align-items: center;
-    gap: .6em;
+    gap: 8px;
     color: var(--Medium-Gray);
     /* margin-bottom: 1em; */
 }
+
+
 
 .dropdown-content li {
     margin-bottom: 1.2em;
@@ -131,7 +133,10 @@ button {
     opacity: 0;
     transition: opacity 0.3s ease;
     margin-top: .6em;
+    padding: 0 1.2em;
+    
 }
+
 .dropdown-content.show-dropdown  {
     display: block;
     opacity: 1;
@@ -241,11 +246,12 @@ p {
     }
 }
 
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 1440px) {
 
     main {
         padding: 1.2em 2em;
         overflow: hidden;
+        margin: 0 auto;
     }
 
     .hamburger {
@@ -263,7 +269,7 @@ p {
     #header {
         width: 100%;
         position: sticky;
-        height: 4em;
+        height: 72px;
         top: 0;
         left: 0;
         background-color: white;
@@ -281,41 +287,50 @@ p {
         padding-left: 0;
         padding-top: 0;
         transition: 0.3s;
-        gap: 2.8em;
+        gap: 0;
         margin-left: 2.2em;
         
     }
 
     .nav div {
         margin-bottom: 0;
+        padding-left: 12px;
+        padding-right: 12px;
     }
 
     li, 
     li a {
         font-size: 16px;
     }
+
+    .menu-features,
+    .menu-company {
+        align-items: center;
+    }
     
     .menu-careers,
     .menu-About {
         margin-top: .05em;
-    
+        margin-right: 20px;
+        margin-left: 20px;
     }
        
+    .menu-header {
+        gap: 0;
+    }
 
     .signup {
         display: flex;
         flex-direction: row;
         align-items: flex-start;
         position: absolute;
-        right: -40em;
+        left: 1009px;
         margin-top: 0;   
-    
-    
-        
     }
 
     .dropdown-content.show-dropdown {
         width: 100%;
+        align-self: flex-start;
     }
 
     #hero {
