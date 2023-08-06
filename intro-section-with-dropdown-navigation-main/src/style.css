@@ -19,6 +19,10 @@ body {
     font-family: 'Epilogue', sans-serif;
 }
 
+main {
+    max-width: 1440px;
+}
+
 .logo {
     width: 87px;
 }
