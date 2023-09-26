@@ -1,0 +1,109 @@
+// reusable functions with mixins.
+// To declare a function: @mixin name_function { content } or 
+// if your function has a parameter: @mixin name_function($name_variable) { content }
+
+// To use mixins, you have to import it by typing @include namefunction();
+
+@mixin flex-center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@mixin flex-row {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+
+@mixin flex-row-left {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+@mixin flex-col {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+/* $radius is the parameter of the function */
+@mixin border-radius($radius) {
+    -webkit-border-radius: $radius;
+    -moz-border-radius: $radius;
+    border-radius: $radius;
+}
+
+// desktop (min-width: 1440px)
+@mixin xl-heading {
+    font-size: 88px;
+    line-height: 88px;
+    letter-spacing: -2.5px;
+    font-weight: bold;
+}
+
+@mixin lg-heading {
+    font-size: 48px;
+    line-height: 56px;
+    letter-spacing: -1.5px;
+    font-weight: bold;
+}
+
+@mixin m-heading {
+    font-size: 24px;
+    line-height: 32px;
+    font-weight: bold;
+}
+
+@mixin lg-body {
+    font-size: 18px;
+    line-height: 28px;
+}
+
+@mixin m-body {
+    font-size: 16px;
+    line-height: 26px;
+}
+
+// tablet (min-width: 768px)
+@mixin xl-tablet-heading {
+    font-size: 72px;
+    line-height: 72px;
+    letter-spacing: -2.05px;
+    font-weight: bold;
+}
+// mobile (min-width: 320px)
+@mixin xl-mobile-heading {
+    font-size: 38px;
+    line-height: 40px;
+    letter-spacing: -1.14px;
+    font-weight: bold;
+}
+
+@mixin lg-mobile-heading {
+    font-size: 32px;
+    line-height: 40px;
+    letter-spacing: -1px;
+    font-weight: bold;
+}
+
+@mixin s-mobile-heading {
+    font-size: 24px;
+    line-height: 32px;
+    letter-spacing: -0.33px;
+    font-weight: bold;
+}
+
+@mixin link {
+    color: $beige;
+    text-decoration-color: $pink;
+    text-underline-offset: 8px;
+}
+
+@mixin link-hover {
+    color: $pink;
+}

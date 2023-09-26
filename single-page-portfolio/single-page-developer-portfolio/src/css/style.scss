@@ -1,0 +1,155 @@
+@import 'variables';
+@import 'mixins';
+@import 'card';
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    width: 100%;
+    font-family: $font;
+    background-color: $bg-color;
+    padding: $padding-mobile;
+    color: $beige;
+}
+
+h1 {
+    @include xl-heading();
+}
+
+p {
+    @include m-body;
+}
+
+ul {
+    li {
+        list-style: none;
+        cursor: pointer;
+    }
+}
+
+a {
+    cursor: pointer;
+}
+
+.container {
+    text-align: center;
+}
+
+header {
+    p {
+       @include s-mobile-heading();
+       margin-bottom: .8em;
+    }
+
+    .social-media-links {
+        padding: 0 4.8em;
+    }
+
+    ul {
+        @include flex-row;
+    }
+}
+
+.hero {
+
+    margin: 3em 0;
+    
+    img {
+        height: 24em;
+        margin: 1em 0;
+    }
+
+    h1 {
+        @include xl-mobile-heading;
+        
+    }
+
+    p {
+        margin: 1.2em 0 2em 0;
+    }
+
+    .contact-me {
+      a {
+        @include link;
+      }
+
+      a:hover {
+        @include link-hover;
+      }
+    }
+}
+
+.skill-section {
+
+    margin: 3em 0;
+
+    div {
+        margin: 1.6em 0;
+    }
+
+    h2 {
+        @include lg-mobile-heading;
+    }
+}
+
+.project-section {
+
+    @include flex-col;
+
+    .project-list {
+        margin: 2em 0;
+    }
+
+    .project-item {
+        margin-bottom: 2.4em;
+        text-align: left;
+    }
+
+    .project__thumbnail-wrapper {
+    
+        min-width: 20rem;
+        margin-bottom: .6em;
+
+        img {
+            width: 100%;
+        }
+    }
+
+    .project__title {
+        @include s-mobile-heading;
+        text-transform: uppercase;
+    }
+
+    .project__description {
+        @include flex-row-left;
+        gap: 1em;
+
+        .project__skill {
+            @include lg-body;
+        }
+    }
+
+    .project__links {
+        margin: 1em 0;
+        ul {
+            @include flex-row-left;
+            gap: 1em;
+        }
+
+        li a {
+            @include link;
+        }
+
+        li a:hover {
+            @include link-hover;
+        }
+    }
+}
+
+
+.contact-section {
+    @include flex-col;
+}

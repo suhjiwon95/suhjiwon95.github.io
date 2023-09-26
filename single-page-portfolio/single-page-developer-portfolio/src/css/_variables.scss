@@ -1,0 +1,18 @@
+// font
+@font-face {
+    font-family: 'headingFont';
+    src: url(../assets/fonts/SpaceGrotesk-VariableFont_wght.ttf);
+}
+
+$font: 'headingFont', sans-serif;
+
+// color
+$bg-color: #a37cf0;
+$black: #151515;
+$pink: #bd2e95;
+$dark-grey: #242424;
+$light-grey: #d9d9d9;
+$beige: #e6ddd6;
+
+// padding
+$padding-mobile: 1em;
