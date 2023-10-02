@@ -58,6 +58,19 @@ button:hover {
   align-self: center;
 }
 
+.add-btn {
+  width: 32px;
+  height: 32px;
+  border: 1px solid white;
+  border-radius: 50%;
+  padding: 8px;
+  margin-top: 2em;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
 .avatar {
   background-color: white;
   border-radius: 50%;
@@ -105,7 +118,7 @@ button:hover {
   justify-content: space-around;
   align-items: flex-start;
   gap: 1.6em;
-  margin-top: 1em;
+  margin-top: 4em;
 }
 
 .middle-row-wrapper {
@@ -113,6 +126,10 @@ button:hover {
   display: flex;
   justify-content: flex-start;
   align-items: center;
+}
+
+.weekly .middle-row-wrapper {
+  margin-right: 74px;
 }
 
 .character {
