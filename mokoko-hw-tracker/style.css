@@ -1,0 +1,172 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;500;700&display=swap");
+:root {
+  font-size: 16px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #373333;
+  width: 100%;
+}
+
+.container {
+  max-width: 1100px;
+  font-family: "Open Sans", sans-serif;
+  margin: 2em auto;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: initial;
+  justify-content: space-around;
+}
+
+h1 {
+  font-size: 20px;
+  text-align: center;
+}
+
+.icon {
+  width: 32px;
+  height: 32px;
+  cursor: pointer;
+}
+
+img {
+  width: 100%;
+}
+
+button {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+button:hover {
+  fill: #EE7070;
+}
+
+.bar-btn {
+  margin-bottom: 4px;
+  width: 20px;
+  height: 20px;
+  position: relative;
+  align-self: center;
+}
+
+.avatar {
+  background-color: white;
+  border-radius: 50%;
+}
+
+.table {
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+  margin-top: 4em;
+}
+
+.daily,
+.weekly {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  max-width: 474px;
+}
+
+.table-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  min-width: 450px;
+  max-width: 450px;
+  border: 1px solid white;
+  border-right: none;
+  border-left: none;
+  padding: 1em;
+}
+
+.table-header {
+  margin-bottom: 1em;
+}
+
+.inner-row-wrapper {
+  min-width: 413px;
+}
+
+.character-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: flex-start;
+  gap: 1.6em;
+  margin-top: 1em;
+}
+
+.middle-row-wrapper {
+  max-width: 364px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.character {
+  cursor: pointer;
+}
+
+.character:hover {
+  color: #EE7070;
+}
+
+.arrow-btn {
+  width: 12px;
+  height: 12px;
+  margin-bottom: 4px;
+}
+
+.stat-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 20px;
+}
+
+.total-num p {
+  color: #EE7070;
+}
+
+.number-wrapper {
+  margin: 0 0.8em;
+}
+
+.number-wrapper .red {
+  color: #EE7070;
+  font-size: 0.9rem;
+}
+
+.box-btn {
+  width: 16px;
+  height: 16px;
+}
+
+.hw-info {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 1em;
+  min-width: 220px;
+  margin-left: 20px;
+}
+
+.weekly .hw-info {
+  margin-right: 40px;
+}
+
+.no-top-border {
+  border-top: none;
+}/*# sourceMappingURL=style.css.map */
