@@ -17,8 +17,119 @@
 body {
     width: 100%;
     height: 100%;
+    background: url(./images/bg-intro-desktop.png);
+    background-color: var(--Red);
+    font-family: 'Poppins', sans-serif;
 }
 
 .container{
-    font-family: 'Poppins', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+    margin: 0 auto;
+    color: white;
+}
+
+.left,
+.right {
+    flex: 1;
+    padding: 2em;
+    max-width: 640px;
+}
+
+h1 {
+    font-size: 3rem;
+    line-height: 48px;
+    margin-bottom: 1em;
+}
+
+.left p {
+    padding-right: 3em;
+}
+
+.shadow {
+    box-shadow: rgba(0, 0, 0, 0.15) 2px 8px 2.6px;
+}
+
+.ad {
+    background-color: var(--Blue);
+    text-align: center;
+    border-radius: 10px;
+    padding: 1em;
+    margin-bottom: 1.4em;
+    
+}
+
+.ad p {
+    font-weight: 400;
+}
+
+.ad span {
+    color: white;
+    font-weight: 600;
+}
+
+form {
+    background-color: white;
+    border-radius: 10px;
+    padding: 1.8em;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100%;
+    gap: 1em;
+}
+
+form p {
+    color: var(--Grayish-Blue);
+    font-size: 0.8rem;
+    font-weight: 600;
+}
+
+form p span {
+    color: var(--Red);
+}
+
+.input-wrapper,
+button {
+    width: 100%;
+    min-width: 500px;
+    max-width: 500px;
+}
+
+input {
+    width: 100%;
+    padding: 1.2em;
+    border-radius: 8px;
+    border: 1px solid var(--Grayish-Blue);
+    font-size: 1.125rem;
+    font-weight: 600;
+}
+
+button {
+    font-weight: 600;
+    background-color: var(--Green);
+    color: white;
+    border: none;
+    border-radius: 8px;
+    padding: 1.2em;
+    text-transform: uppercase;
+    font-size: 1.125rem;
+}
+
+
+
+@media screen and (max-width: 1000px) {
+
+    body {
+        background: url(./images/bg-intro-mobile.png);
+        background-color: var(--Red);
+    }
+
+    .container {
+        flex-direction: column;
+    }
+
 }
