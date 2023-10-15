@@ -29,32 +29,36 @@
       </div>
 
       <div class="form shadow">
-        <form action="#">
+        <form action="#" id="form" novalidate>
           <div class="input-wrapper">
             <label for="fname">
-              <input type="text" id="fname" placeholder="First Name">
+              <input type="text" id="fname" name="fname" placeholder="First Name">
             </label>
+            <div class="error"></div>
           </div>
 
           <div class="input-wrapper">
             <label for="lname">
-              <input type="text" id="lname" placeholder="Last Name">
+              <input type="text" id="lname" name="lname" placeholder="Last Name">
             </label>
+            <div class="error"></div>
           </div>
 
           <div class="input-wrapper">
             <label for="email">
-              <input type="email" id="email" placeholder="Email Address">
+              <input type="email" id="email" name="email" placeholder="Email Address">
             </label>
+            <div class="error emailError"></div>
           </div>
       
           <div class="input-wrapper">
             <label for="password">
-              <input type="password" id="password" placeholder="Password">
+              <input type="password" id="password" name="password" placeholder="Password">
             </label>
+            <div class="error"></div>
           </div>
       
-          <button class="shadow">Claim your free trial</button>
+          <button type="submit" class="shadow">Claim your free trial</button>
           <p>By clicking the button, you are agreeing to our 
             <span>Terms and Services</span>
           </p>
@@ -71,5 +75,6 @@
       Coded by <a href="#">Your Name Here</a>.
     </p>
   </footer>
+  <script src="./script.js"></script>
 </body>
 </html>

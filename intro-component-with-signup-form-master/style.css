@@ -102,6 +102,7 @@ button {
 input {
     width: 100%;
     padding: 1.2em;
+    padding-left: 1.8em;
     border-radius: 8px;
     border: 1px solid var(--Grayish-Blue);
     font-size: 1.125rem;
@@ -109,6 +110,7 @@ input {
 }
 
 button {
+    cursor: pointer;
     font-weight: 600;
     background-color: var(--Green);
     color: white;
@@ -119,6 +121,19 @@ button {
     font-size: 1.125rem;
 }
 
+button:hover {
+    background-color: hsl(156, 67%, 57%);
+}
+
+.error {
+    color: var(--Red);
+    text-align: right;
+    font-weight: 600;
+    font-size: 0.9rem;
+    margin-top: 0.6em;
+    padding-right: 0.6em;
+    font-style: italic;
+}
 
 
 @media screen and (max-width: 1000px) {
