@@ -4,7 +4,7 @@
     --Red: hsl(0, 100%, 74%); 
     --Green: hsl(154, 59%, 51%);
     --Blue: hsl(248, 32%, 49%);
-    --Dark-Blue: hsl(249, 10%, 26%); 
+    --Dark-Blue: #3e3c49; 
     --Grayish-Blue: hsl(246, 25%, 77%);
     font-size: 16px;
 }
@@ -22,7 +22,7 @@ body {
     font-family: 'Poppins', sans-serif;
 }
 
-.container{
+.container {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -135,6 +135,52 @@ button:hover {
     font-style: italic;
 }
 
+/* submission-message-page */
+.hidden {
+    display: none;
+}
+.active {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+    margin: 2em auto;
+}
+
+.box {
+    text-align: center;
+    background-color: white;
+    border-radius: 8px;
+    padding: 2em;
+    color: var(--red);
+    min-width: 680px;
+    max-width: 680px;
+}
+
+.box h1 {
+    font-size: 1.6rem;
+    -webkit-text-stroke: 1px var(--Grayish-Blue);
+    color: white;
+    text-shadow:
+        3px 3px 0 var(--Dark-Blue),
+        -1px -1px 0 var(--Dark-Blue),  
+        1px -1px 0 var(--Dark-Blue),
+        -1px 1px 0 var(--Dark-Blue),
+        1px 1px 0 var(--Dark-Blue);
+}
+
+.box p {
+    color: var(--Grayish-Blue);
+    font-weight: 600;
+}
+
+.box p span {
+    color: var(--Red);
+}
+
+
+
+
 
 @media screen and (max-width: 1000px) {
 
@@ -146,5 +192,7 @@ button:hover {
     .container {
         flex-direction: column;
     }
+
+   
 
 }
