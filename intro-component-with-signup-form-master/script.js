@@ -13,7 +13,7 @@ const mainEvent = (event) => {
     event.preventDefault();
 
     let formValidation = validateForm();
-    if (formValidation) {
+    if (formValidation) {ㄴ
         console.log(email.value);
         container.style.display = 'none';
         confirmation.className = 'active';
@@ -75,14 +75,3 @@ const validateEmail = () => {
 }
 
 form.addEventListener('submit', mainEvent);
-
- // for (let i = 0; i < inputs.length - 1; i++) {
-    //     if (inputs[i].value === '') {
-    //         inputs[i].style.border = "2px solid hsl(0, 100%, 74%)";
-    //         errors[i].innerHTML = "This field cannot be empty";
-    //         event.preventDefault();
-    //     } else {
-    //         errors[i].innerHTML = "";
-    //     }
-    // }
-
