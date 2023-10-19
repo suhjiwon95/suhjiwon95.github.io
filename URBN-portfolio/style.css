@@ -1,0 +1,241 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Tilt+Neon&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+:root {
+    font-size: 18px;
+    --blue: #143AA2;
+    --light-blue: #3ebde3;
+    --gray: #d3d4d7;
+    --black: #04060d;
+
+    /* background color */
+    --moody-blue: #737ccf;
+    --link-water: #e1e5f8;
+    --persian-blue: #2218a7;
+    --spindle: #bbc4eb;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Tilt Neon', sans-serif;
+}
+
+.container {
+    overflow-y: hidden;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: var(--persian-blue);
+    /* background: rgb(238,174,202); */
+    /* background: radial-gradient(circle, rgba(238,174,202,0.75) 5%, rgba(194,180,217,1) 20%, rgba(148,187,233,1) 100%); */
+    color: var(--gray);
+}
+
+.section-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding: 1em;
+    margin: 1rem auto;
+    gap: 1.4rem;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    position: relative;
+    padding: 0 0.25em;
+    text-decoration-thickness: 0.25rem;
+    text-decoration-color: var(--moody-blue);
+    color: var(--gray);
+}
+
+a::before {
+    content: '';
+    background-color: var(--light-blue);
+    
+    position: absolute;
+    left: 0;
+    bottom: 3px;
+    width: 100%;
+    height: 8px;
+    z-index: -1;
+    transition: all .3s ease-in-out;
+  }
+
+  a:hover::before {
+    bottom: 0;
+    height: 100%;
+    text-decoration-color: var(--moody-blue);
+  }
+
+a,
+.skills li {
+    font-size: 1.25rem;
+}
+
+.background,
+h1 {
+    font-family: 'Anton', sans-serif;
+    font-size: 5rem;
+    line-height: 5.2rem;
+}
+
+.background {
+    width: 1100px;
+}
+
+.about ul li {
+    font-size: 1.25rem;
+}
+
+h1 {
+    max-width: 300px;
+}
+
+.project-title h1 {
+    width: fit-content;
+    font-size: 3rem;
+    line-height: 3.2rem;
+}
+
+.top {
+    width: 100%;
+}
+
+.resume {
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-start;
+}
+
+.school {
+    align-self: flex-end;
+}
+
+.school ul li {
+    margin-bottom: .2em;
+}
+
+.school span,
+.background span {
+    /* color: var(--black); */
+    /* font-style: italic; */
+    margin-right: .24em;
+    font-size: 1.125rem;
+    border-bottom: 4px solid var(--moody-blue);
+}
+
+.projects {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 2.2em;
+}
+
+.carousel {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 2.2em;
+}
+
+.active {
+	scroll-snap-type: unset;
+}
+
+.box {
+    border: 1px solid var(--gray);
+    width: 400px;
+    height: 400px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1.4em;
+}
+
+.box:hover {
+    box-shadow: var(--moody-blue) 0px 7px 29px 0px;
+}
+
+.skills ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2em;
+}
+
+.links ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1em;
+}
+
+.sun {
+    height: 300px;
+    width: 300px;
+    background:rgba(238,174,202,0.75);
+    background: radial-gradient(circle,rgba(238,174,202,.7) 0%,rgba(238, 218, 227, 0) 60%);
+    background-size: 50%;
+    background-repeat: no-repeat;
+    background-position: center;
+    -webkit-animation: Gradient 6s ease-in-out infinite;
+    -moz-animation: Gradient 6s ease-in-out infinite;
+    animation: Gradient 6s ease-in-out infinite; 
+    position: absolute;
+    
+  }
+
+  span.sun {
+    border-bottom: none;
+  }
+  
+  @-webkit-keyframes Gradient {
+      0% {
+          background-size: 50%;
+      }
+      50% {
+          background-size: 100%;
+      }
+      100% {
+          background-size: 50%;
+      }
+  }
+  
+  @-moz-keyframes Gradient {
+          0% {
+          background-size: 50%;
+      }
+      50% {
+          background-size: 100%;
+      }
+      100% {
+          background-size: 50%;
+      }
+  }
+  
+  @keyframes Gradient {
+          0% {
+          background-size: 50%;
+      }
+      50% {
+          background-size: 100%;
+      }
+      100% {
+          background-size: 50%;
+      }
+  }
