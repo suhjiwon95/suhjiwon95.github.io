@@ -18,13 +18,20 @@ async function mainEvent() {
             console.log(data);
             loadAnimation.style.display = 'none';
             // Getting advice
-            const advice = data.slip.advice;
-            adviceDiv.textContent = `"${advice}"`;
+            // const advice = data.slip.advice;
+            // adviceDiv.textContent = `"${advice}"`;
             
             // Getting advice id
-            const advice_id = data.slip.id;
-            adviceId.textContent = advice_id;
-    
+            // const advice_id = data.slip.id;
+            // adviceId.textContent = advice_id;
+
+            // can I used data destructuring here? YES
+            const { id , advice } = data.slip;
+            console.log(id);
+            console.log(advice);
+            adviceId.textContent = id;
+            adviceDiv.textContent = `"${advice}"`;
+
         } else {
             console.log("no data");
             adviceDiv.textContent = 'Please try again';

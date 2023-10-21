@@ -46,4 +46,11 @@ Users should be able to:
   - left: 50%: Sets the left edge of .divider-dice-wrapper to the horizontal midpoint of .advice-wrapper.
   - transform: translateX(-50%): Moves .divider-dice-wrapper 50% of its own width to the left, effectively centering it horizontally.
 
+2. Data destructuring
+  - const obj = { a: 1, b: 2 };
+    const { a, b } = obj;
+    // is equivalent to:
+    // const a = obj.a;
+    // const b = obj.b;
+
 
