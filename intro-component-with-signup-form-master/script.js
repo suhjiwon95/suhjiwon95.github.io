@@ -13,7 +13,7 @@ const mainEvent = (event) => {
     event.preventDefault();
 
     let formValidation = validateForm();
-    if (formValidation) {ㄴ
+    if (formValidation) {
         console.log(email.value);
         container.style.display = 'none';
         confirmation.className = 'active';
