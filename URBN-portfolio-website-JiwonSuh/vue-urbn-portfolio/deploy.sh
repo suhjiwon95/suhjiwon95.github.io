@@ -15,11 +15,14 @@ cd dist
 git init
 git add -A
 git commit -m 'deploy'
+git push -f git@github.com:suhjiwon95.github.io/URBN-portfolio-website-JiwonSuh.git main:gh-pages
+
 
 # if you are deploying to https://<USERNAME>.github.io
 # git push -f git@github.com:<USERNAME>/<USERNAME>.github.io.git main
 
 # if you are deploying to https://<USERNAME>.github.io/<REPO>
 # git push -f git@github.com:<USERNAME>/<REPO>.git main:gh-pages
+
 
 cd -s

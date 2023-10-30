@@ -5,7 +5,7 @@ import vue from '@vitejs/plugin-vue'
 
 // https://vitejs.dev/config/
 export default defineConfig({
-  base: '/URBN-portfolio-website-JiwonSuh/',
+  base: '/suhjiwon95.github.io/',
   plugins: [
     vue(),
   ],
