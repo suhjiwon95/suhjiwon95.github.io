@@ -9,19 +9,314 @@
 <body>
     <main>
         <div class="container">
-            <div class="banner">
-                <div class="top">
-                    <p>Would you like to get connected?</p>
-                    <a href="mailto:suhjiwon1995@gmail.com">suhjiwon1995@gmail.com</a>
-                    <p>240-848-0027</p>
+            <header class="sticky">
+                <div class="banner">
+                    <div class="top flex-row">
+                        <h2>Would you like to get connected?</h2>
+                        <a href="mailto:suhjiwon1995@gmail.com">suhjiwon1995@gmail.com</a>
+                        <p>240-848-0027</p>
+                    </div>
+                    <div class="bottom flex-row">
+                        <h3>To see more project live sites</h3>
+                        <a href="https://github.com/suhjiwon95/suhjiwon95.github.io" target="_blank">Visit my Github</a>
+                        <a href="https://www.frontendmentor.io/profile/suhjiwon95" target="_blank">Visit my Frontend Mentor</a>
+                    </div>
                 </div>
-                <div class="bottom">
-                    <p>To see more project live sites</p>
-                    <a href="mailto:suhjiwon1995@gmail.com">suhjiwon1995@gmail.com</a>
-                    <p>240-848-0027</p>
+    
+                <div class="header">
+                    <div class="border menubar">
+                        <h1 class="logo max-width">Jiwon Suh</h1>
+                        <img src="./images/burger-menu-svgrepo-com.svg" alt="" class="menu-icon">
+                    </div>
+                    
+                    <nav>
+                        <ul class="border">
+                            <div class="flex-row max-width">
+                                <li class="header-padding"><a href="#about" id="aboutButton">About</a></li>
+                                <li class="header-padding"><a href="#education-experience" id="edu-ex-btn">Education & Experience</a></li>
+                                <li class="header-padding"><a href="#projects" id="projectsButton">Projects</a></li>
+                            </div>
+                            
+                        </ul>
+                    </nav>
+                </div>
+            </header>
+            
+
+            <article id="about" class="content">
+                <div class="about max-width">
+                    <div class="detail-wrapper">
+                        <div class="img-wrapper">
+                            <img src="./images/62572F1E-F78A-4881-AA4D-13B955B2B2EF_1_105_c.jpeg" alt="">
+                        </div>
+                        <div class="detail">
+                            <h1>Hi, I'm Jiwon </h1>
+                            <div class="keywords">
+                                <p>she/her</p>
+                                <p>name pronounce <span class="red">G-1</span></p>
+                                <p>Born and raised in South Korea, Seoul</p>
+                                <p>Based in Maryland</p>
+                                <br>
+                                <p>Love yoga</p>
+                                <p>Powered by coffee</p>
+                                <p>Optimistic</p>
+                            </div>
+                        </div>    
+                    </div>
+                    
+                </div>
+            </article>
+
+            <article id="edu-ex" class="eduEx content hidden">
+                <div class="max-width detail">
+                    <h1>Education</h1>
+                    <div class="school">
+                        <div class="reflection">
+                            <div class="college">
+                                <h1>University of Maryland <span class="light-font">College Park, MD</span></h1>
+                                <p class="light-font">2021 - 2024</p>
+                            </div>
+                            <ul>
+                                <li>INST 377 Dynamic Web Applications <span class="red">HTML, CSS, JS</span></li>
+                                <li>INST 326 Object-Oriented Programming <span class="red">Python</span></li>
+                                <li>INST 362 User-Centered Design <span class="red">Figma</span></li>
+                                <li>INST 346 Technologies, Infrastructure and Architecture <span class="red">IoT</span></li>
+                                <li>INST 327 Database and Modeling <span class="red">MySQL</span></li>
+                            </ul>
+                        </div>
+                        <div class="reflection">
+                            <div class="college">
+                                <h1>Montgomery College <span class="light-font">Rockville, MD</span></h1>
+                                <p class="light-font">2015 - 2021</p>
+                            </div>
+                            <ul>
+                                <li>CMSC 140 Introduction to Programming <span class="red">C++</span></li>
+                                <li>CMSC 203 Computer Science I <span class="red">JAVA</span></li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                </div>
+
+
+            </article>
+
+            <article id="projects" class="projects content hidden">
+                <div class="max-width detail">
+                    <h1>Projects</h1>
+                    <div class="description">
+                        <ul>
+                            <li>All of my projects are designed by <span class="red">FrontendMentor</span>, a platform that provides numerous UI designs to practice web development skills. </li>
+                            <li>After completing 16 projects from FrontendMentor, I became confident at building basic web pages with HTML, CSS, and JavaScript. 
+                                Of those 16 projects, I have selected three projects that showcase my foundational expertise of web development.
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="project-gallery max-width">
+                    <div class="box">
+                        <div class="left">
+                            <div class="img-wrapper">
+                                <img src="./images/desktop-design.jpg" alt="">
+                            </div>
+                            <a href="https://suhjiwon95.github.io/intro-component-with-signup-form-master/index.html" 
+                                       target="_blank" rel="noopener noreferrer">View live site</a>
+                            <a href="https://github.com/suhjiwon95/suhjiwon95.github.io/tree/main/intro-component-with-signup-form-master" 
+                                       target="_blank" rel="noopener noreferrer">View code</a>
+                        </div>
+                        
+                        <div class="detail">
+                            <h1>Sign-up Form</h1>
+                            <div class="skills">
+                                <ul class="flex-row red">
+                                    <li>HTML</li>
+                                    <li>CSS</li>
+                                    <li>JS</li>
+                                </ul>
+                            </div>
+                            <div class="reflection">
+                                <h1>The challenges</h1>
+                                <ul>
+                                    <li>Displays an error message when the form is submitted if:</li>
+                                    <li>- Any input field is empty. The message for this error should say "[Field Name] cannot be empty"</li>
+                                    <li>- The email address is not formatted correctly (i.e. a correct email address should have this structure: name@host.tld). The message for this error should say "Looks like this is not an email"</li>
+                                </ul>
+                            </div>
+                            <div class="reflection">
+                                <h1>What I learned</h1>
+                                <ul>
+                                    <li>- Use of .element to store user inputs in an array</li>
+                                    <li>- Use a for-loop to iterate the array and check the inputs</li>
+                                </ul>
+                            </div>
+                            <div class="reflection">
+                                <h1>Continue development</h1>
+                                <ul>
+                                    <li>- Re-building this project with Vue.js</li>
+                                    
+                                </ul>
+                            </div>
+
+                            
+                        </div>
+                        
+                    </div>
+
+                    <div class="box">
+                        <div class="left">
+                            <div class="img-wrapper">
+                                <img src="./images/advice-desctop.jpg" alt="">
+                            </div>
+                            <a href="https://suhjiwon95.github.io/advice-generator-app/advice-generator-app-main/index.html" 
+                                       target="_blank" rel="noopener noreferrer">View live site</a>
+                            <a href="https://github.com/suhjiwon95/suhjiwon95.github.io/tree/main/advice-generator-app/advice-generator-app-main" 
+                                       target="_blank" rel="noopener noreferrer">View code</a>
+                        </div>
+                        
+                        <div class="detail">
+                            <h1>Advice generator app</h1>
+                            <div class="skills">
+                                <ul class="flex-row red">
+                                    <li>HTML</li>
+                                    <li>CSS</li>
+                                    <li>JS</li>
+                                    <li>API</li>
+                                </ul>
+                            </div>
+                            <div class="reflection">
+                                <h1>The challenges</h1>
+                                <ul>
+                                    <li>- Generate a new piece of advice by clicking the dice icon</li>
+                                    
+                                </ul>
+                            </div>
+                            <div class="reflection">
+                                <h1>What I learned</h1>
+                                <ul>
+                                    <li>- horizontally set elements using 'left: 50%' and 'transform: translateX(-50%)'.</li>
+                                    <li>- left: 50%: Sets the left edge of .divider-dice-wrapper to the horizontal midpoint of .advice-wrapper.</li>
+                                    <li>- transform: translateX(-50%): Moves .divider-dice-wrapper 50% of its own width to the left, effectively centering it horizontally.</li>    
+                                    
+                                    <li>- Data destructuring</li>
+                                    <div class="code">
+                                        <code>const obj = { a: 1, b: 2 }; const { a, b } = obj; // is equivalent to: const a = obj.a; const b = obj.b;</code>
+                                    </div>
+                                    
+                                </ul>
+                            </div>
+                            <div class="reflection">
+                                <h1>Continue development</h1>
+                                <ul>
+                                    <li>- Re-building this project with Vue.js </li>
+                                    
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="box">
+                        <div class="left">
+                            <div class="img-wrapper">
+                                <img src="./images/landing-page-desktop.jpg" alt="">
+                            </div>
+                            <a href="https://suhjiwon95.github.io/intro-section-with-dropdown-navigation-main/src/index.html" 
+                                       target="_blank" rel="noopener noreferrer">View live site</a>
+                            <a href="https://github.com/suhjiwon95/suhjiwon95.github.io/tree/main/intro-section-with-dropdown-navigation-main" 
+                                       target="_blank" rel="noopener noreferrer">View code</a>
+                        </div>
+                        
+                        <div class="detail">
+                            <h1>Responsive landing page with dropdown navigation</h1>
+                            <div class="skills">
+                                <ul class="flex-row red">
+                                    <li>HTML</li>
+                                    <li>CSS</li>
+                                    <li>JS</li>
+                                    
+                                </ul>
+                            </div>
+                            <div class="reflection">
+                                <h1>The challenges</h1>
+                                <ul>
+                                    <li>- View the relevant dropdown menus on desktop and mobile when interacting with the navigation links</li>
+                                    <li>- View the optimal layout for the content depending on their device's screen size</li>
+                                    <li>- See hover states for all interactive elements on the page</li>
+                                </ul>
+                            </div>
+                            <div class="reflection">
+                                <h1>What I learned</h1>
+                                <ul>
+                                    <li>- CSS animation for navigation</li>
+                                </ul>
+                            </div>
+                            <div class="reflection">
+                                <h1>Continue development</h1>
+                                <ul>
+                                    <li>- Re-building this project with Vue.js </li>
+                                    
+                                </ul>
+                            </div>
+
+                            
+                        </div>
+                        
+                    </div>
+                </div>
+
+            </article>
+
+
+            <footer>
+                <div>
+                    <p>Hope to see you next year!</p>
                 </div>
             </div>
+            
         </div>
+        
     </main>
+   
+    
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            const links = document.querySelectorAll("nav a");
+            const contentSections = document.querySelectorAll(".content");
+
+            links.forEach(function(link, index) {
+                link.addEventListener("click", function(event) {
+                event.preventDefault();
+
+                // Hide all content sections
+                contentSections.forEach(function(contentSection) {
+                    console.log(contentSection, index)
+                    contentSection.classList.add("hidden");
+                });
+
+                // Show the content associated with the clicked link
+                contentSections[index].classList.remove("hidden");
+                });
+            });
+
+                // Show the initial content (e.g., content for the first link)
+                contentSections[0].classList.remove("hidden");
+        });
+        
+        const menuIcon = document.querySelector('.menu-icon');
+        const menu = document.querySelector('nav');
+
+        menuIcon.addEventListener('click', () => {
+            menuIcon.classList.toggle('active');
+            menu.classList.toggle('active');
+        });
+        
+        document.querySelectorAll("nav a").forEach(n => n.addEventListener("click", () => {
+            menuIcon.classList.remove('active');
+            menu.classList.remove('active');
+        }))
+
+        
+    </script>
 </body>
 </html>

@@ -1,0 +1,510 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla:wght@300;400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Alumni+Sans:wght@700&display=swap');
+:root {
+    --top-banner-color: #9BC1C0;
+    --bottom-banner-color: #F3F3F3;
+    --link-hover-color: #F57474;
+    font-size: 13px;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    letter-spacing: 1.2px;
+}
+
+body {
+    width: 100vw;
+    font-family: 'Karla', sans-serif;
+    overflow-x: hidden;
+}
+
+.max-width {
+    max-width: 1024px;
+    margin: 0 auto;
+}
+
+.smaller-font {
+    font-size: 1rem;
+}   
+
+.red {
+    color: var(--link-hover-color);
+}
+
+.container {
+    margin: 0 auto;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: stretch;
+}
+
+.flex-row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1.4em;
+}
+
+h1,
+h2 {
+    font-family: 'Alumni Sans', sans-serif;
+
+}
+
+nav a {
+    text-decoration: none;
+    color: black;
+    padding: 1em;
+    transition: all 0.25s ease;
+}
+
+nav a:hover {
+    color: var(--link-hover-color);
+    border-bottom: 1px solid var(--link-hover-color);
+}
+
+nav a:focus {
+    color: var(--link-hover-color);
+    border-bottom: 1px solid var(--link-hover-color);
+}
+
+
+.sticky {
+    position: sticky;
+    transition: top .35s linear;
+    top: 0;
+    left: 0;
+}
+
+
+ /* banner */
+
+.banner {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--top-banner-color);
+}
+
+.banner a {
+    color: black;
+}
+
+.banner a:hover {
+    color: var(--link-hover-color);
+}
+
+.top,
+.bottom {
+    padding: .4em;
+}
+
+.banner .bottom {
+    width: 100%;
+    background-color: var(--bottom-banner-color);
+}
+
+/* banner ends */
+
+/* header */
+
+.header {
+    background-color: white;
+}
+
+.border {
+    width: 100%;
+    border-bottom: 1px solid var(--bottom-banner-color);
+}
+
+.logo {
+    font-size: 2.7rem;
+    padding-left: .4em;
+}
+
+
+
+li {
+    list-style: none;
+    
+}
+
+.header div.flex-row {
+   justify-content: flex-start;
+   align-items: flex-start;
+   gap: 5em;
+}
+
+.header-padding {
+    padding: 1em;
+}
+
+/* header ends */
+
+/* About */
+
+.about {
+    margin: 5em auto;
+    padding: 1em;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    margin-bottom: 1em;
+}
+
+.about .detail-wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 2em;
+}
+
+.about .img-wrapper {
+    width: 400px;
+    margin-bottom: 2em;
+}
+
+
+article h1 {
+    font-size: 3rem;
+    font-family: 'Karla', sans-serif;
+    grid-column-end: span 6;
+}
+
+.detail,
+.keywords {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2em;
+    margin-bottom: 2em;
+}
+
+.keywords {
+    gap: 1em;
+}
+
+.detail p {
+    padding: 0 4em;
+}
+
+/* about ends */
+
+/* projects & education-experience */
+.projects,
+.eduEx {
+    margin: 2em auto;
+    padding: 1em;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+.projects .detail,
+.eduEx .detail {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 2em 4em;
+    gap: 8em;
+    line-height: 1.5rem;
+    margin-bottom: 2em;
+}
+
+.eduEx,
+.about {
+    min-height: 100vh;
+}
+
+.projects h1,
+.eduEx h1 {
+    margin-top: 20px;
+}
+
+.left .img-wrapper {
+    width: 495px;
+    /* height: 320px; */
+    margin-top: 24px;
+    margin-bottom: 10px;
+}
+
+img {
+    width: 100%;
+}
+
+.box {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 1em;
+    margin-bottom: 4em;
+}
+
+.box h1 {
+    font-size: 2rem;
+    line-height: 2.4rem;
+}
+
+.box .detail {
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 1em;
+}
+
+.reflection h1 {
+    margin-top: 20px;
+    margin-bottom: 10px;
+    font-size: 1.25rem;
+}
+
+.reflection li {
+    margin-bottom: 10px;
+}
+
+.box a {
+    cursor: pointer;
+    text-align: center;
+    width: 100%;
+    padding: 1em;
+    border: 1.2px solid var(--link-hover-color);
+    color: var(--link-hover-color);
+    background-color: transparent;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.box a:hover {
+    border: 1.2px solid var(--link-hover-color);
+    background-color: var(--link-hover-color);
+    color: white;
+}
+
+
+ 
+.left {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1em;
+    padding-top: 2em;
+    width: 495px; 
+}
+
+code {
+    letter-spacing: 0;
+}
+.code {
+    background-color: var(--bottom-banner-color);
+    padding: 0.8em 1em;
+}
+
+.light-font {
+    font-weight: 300;
+    font-size: 1rem;
+}
+
+.college {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+}
+
+.school .reflection {
+    width: 500px;
+}
+
+.school {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 1.2em;
+}
+
+.hidden {
+    display: none;
+}
+
+.active {
+    right: 0;
+}
+
+.menu-icon {
+    display: none;
+}
+
+footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    background-color: var(--bottom-banner-color);
+    text-align: center;
+    padding: 2.2em;
+    font-weight: 700;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2em;
+    margin-bottom: 0;
+}
+
+
+
+@media screen and (max-width: 760px) {
+    
+
+    .flex-row {
+        gap: 0.4em;
+    }
+    .top,
+    .bottom {
+        flex-direction: column;
+    }
+
+    .header div.flex-row {
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        gap: 2em;
+    }
+
+    header.hamburger-menu {
+        background-color: white;
+        width: 100%;
+        height: 100vh;
+    }
+
+    .menubar {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 1em;
+    }
+
+    .logo {
+        padding-left: 0em;
+    }
+
+    .max-width {
+        margin: 0;
+    }
+
+    .menu-icon {
+        cursor: pointer;
+        display: block;
+        width: 32px;
+        height: 32px;
+    }
+
+    nav {
+        /* display: none; */
+        width: 100%;
+        height: 100%;
+        background-color: white;
+        position: fixed;
+        right: -100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        padding-left: 1.6em;
+        padding-top: 1.6em;
+        top: 187px;
+        transition: 0.3s;
+        border-top: 1px solid var(--bottom-banner-color);
+        
+    }
+
+    nav .border {
+        border-bottom: none;
+    }
+
+    .about {
+        flex-direction: column;
+    }
+
+    .about .img-wrapper {
+        width: 320px;
+        margin-bottom: 2em;
+    }
+
+    .about .detail-wrapper {
+        flex-direction: column;
+        justify-content: center;
+        align-items:center;
+        gap: 2em;
+    }
+
+    .about .detail {
+        margin-bottom: 5em;
+    }
+
+    .projects .detail, 
+    .eduEx .detail {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        gap: 1.4em;
+        line-height: 1.5rem;
+        margin-bottom: 2em;
+        padding: 1.8em;
+    }
+
+    .projects .detail h1,
+    .projects .detail li,
+    .eduEx h1 {
+        margin-bottom: 1em;
+    }
+
+
+    .box {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        gap: 1em;
+    }
+
+    .box .detail {
+        gap: 0.2em;
+    }
+
+    .left {
+        max-width: 320px;
+    }
+
+    .left .img-wrapper {
+        width: 320px;
+    }
+
+    .keywords {
+        text-align: center;
+    }
+
+    .school .reflection {
+        width: 320px;
+        gap: 1em;
+    }
+
+    .college,
+    .reflection {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 0 2em;
+    }
+
+  
+}
