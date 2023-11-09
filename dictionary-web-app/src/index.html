@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" type="text/javascript"></script>
+  <title>Frontend Mentor | Dictionary web app</title>
+</head>
+<body>
+  <main>
+    <div class="container">
+      <header>
+        <div class="icon-button-wrapper">
+          <div class="logo">
+            <img src="./assets/images/logo.svg" alt="" class="pointer">
+          </div>
+          <div class="font-menu">
+            <div>
+              <li>Mono</li>
+              <div class="dropdown-menu">
+                  <li>Serif</li>
+                  <li>Sans</li>
+              </div>
+            </div>
+            
+            <img src="./assets/images/icon-arrow-down.svg" alt="" id="arrow" class="pointer">
+          </div>
+          <div class="toggle-button-wrapper">
+            <label class="switch">
+              <input type="checkbox" value="checked" class="toggle">
+              <span class="slider round"></span>
+            </label>
+            <img src="./assets/images/icon-moon.svg" alt="" class="moon-icon">
+          </div>
+        </div>
+      
+        <div class="search-bar">
+          <div class="search-bar-wrapper">
+            <input type="text" name="search" id="search" placeholder="search" class="pointer" >
+            <img src="./assets/images/icon-search.svg" alt="" id="search-icon">
+          </div>
+          
+          <div class="error">Error here</div>
+        </div>
+      </header>
+      <section class="hero">
+        <div class="hero-vocab-and-button">
+          <div class="vocab">
+            <h1 id="vocab">Word</h1>
+            <p class="phonetic">phonetic</p>
+          </div>
+          <button class="play-button"><img src="./assets/images/icon-play.svg" alt=""></button>
+        </div>
+
+        <div class="div-wrapper">
+          <div class="vocab-divider">
+            <p class="vocab-type">noun</p>
+            <hr>
+          </div>
+          <div class="meaning">
+            <p>Meaning</p>
+            <div class="meaning-list">
+              <ul>
+                <li class="definition">meaning1</li>
+                <p class="example">"Example sentence here"</p>
+                <li>meaning2</li>
+              </ul>
+            </div>
+          </div>
+          <div class="synonyms">
+            <p>Synonyms</p>
+            <div class="synonyms-list">
+              <ul>
+                <li class="synonym">synonym1</li>
+                <li>synonym2</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="newDiv"></div>
+        
+        <hr>
+        <div class="source">
+          <p>source
+            <span><a href="">link here <img src="./assets/images/icon-new-window.svg" alt=""></a></span>
+          </p>
+        </div>
+        
+      </section>
+      
+    </div>
+  </main>
+  
+  <script>
+    $( ".div-wrapper" ).clone().appendTo( ".newDiv" );
+  </script>
+  <script src="./script.js"></script>
+</body>
+</html>
