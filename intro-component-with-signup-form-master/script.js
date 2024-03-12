@@ -8,17 +8,28 @@ let errors = document.querySelectorAll('.error');
 const confirmation = document.querySelector('.hidden');
 const container = document.querySelector('.container');
 const thisEmailAddress = document.querySelector('.this-email');
+const backButton = document.querySelector('.back-button');
 
 const mainEvent = (event) => {
     event.preventDefault();
-
+    
     let formValidation = validateForm();
     if (formValidation) {
-        console.log(email.value);
-        container.style.display = 'none';
-        confirmation.className = 'active';
-        thisEmailAddress.textContent = `${email.value}`;
+        // container.style.display = 'none';
+        // confirmation.className = 'active';
+        window.location.href="./submission-message-page.html"
+        form.reset(); // reseting the form values
+        thisEmailAddress.textContent = `${email.value}`; 
+
+        // back button doesn't work. Trying to go back to the form page
+        backButton.addEventListener('click', () => {
+            console.log("nope");
+            window.history.back();
+        })
     }
+
+    
+ 
 }
 
 const validateForm = () => {
@@ -73,5 +84,7 @@ const validateEmail = () => {
 
     return isEmailValid;
 }
+
+
 
 form.addEventListener('submit', mainEvent);
