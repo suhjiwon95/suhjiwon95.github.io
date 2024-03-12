@@ -33,6 +33,10 @@ body {
     color: var(--link-hover-color);
 }
 
+.description a {
+    text-decoration-color: #F57474;
+}
+
 .container {
     margin: 0 auto;
     position: relative;
